@@ -9,9 +9,9 @@
                                     <h4>Akademik</h4>
                                     <ul>
                                         <li><a href="program_studi.php"><i class='bx bx-chevron-right'></i> Program Akademik</a></li>
-                                        <li><a href="news-and-blog.html"><i class='bx bx-chevron-right'></i> Kemahasiswaan</a></li>
-                                        <li><a href="blog-details.html"><i class='bx bx-chevron-right'></i> Jadwal Kuliah</a></li>
-                                        <li><a href="alumni.html"><i class='bx bx-chevron-right'></i> Surat Mahasiswa</a></li>
+                                        <li><a href="kemahasiswaan.php"><i class='bx bx-chevron-right'></i> Kemahasiswaan</a></li>
+                                        <li><a href="jadwal_kuliah.php"><i class='bx bx-chevron-right'></i> Jadwal Kuliah</a></li>
+                                        <li><a href="surat_mahasiswa.php"><i class='bx bx-chevron-right'></i> Surat Mahasiswa</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -21,7 +21,7 @@
                                 <div class="footer-widget">
                                     <h4>Laboratorium</h4>
                                     <ul>
-                                        <li><a href="laboratorium.html"><i class='bx bx-chevron-right'></i> Laboratorium Psikologi</a></li>
+                                        <li><a href="laboratorium.php"><i class='bx bx-chevron-right'></i> Laboratorium Psikologi</a></li>
                                     </ul>
                                 </div>
                             </div>

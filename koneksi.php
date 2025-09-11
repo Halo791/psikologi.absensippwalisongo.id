@@ -1,7 +1,7 @@
 <?php
 $host = "localhost";     // ganti sesuai server
-$user = "abss9145_psikologi";          // ganti sesuai user DB
-$pass = "Berkah_25";              // ganti sesuai password DB
+$user = "root";          // ganti sesuai user DB
+$pass = "";              // ganti sesuai password DB
 $db   = "abss9145_psikologi"; // ganti sesuai nama database
 
 $conn = new mysqli($host, $user, $pass, $db);

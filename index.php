@@ -6,12 +6,6 @@
     <section class="hero">
         <body>
          
-       <!-- Start Navbar Area Start -->
-        
-       
-        <!-- End Clgun Searchbar Area -->
-
-        <!-- Start Clgun Banner 2 Area -->
         <div class="banner-area-2 big-bg-2">
             <div class="container">
                 <div class="banner-content-2">
@@ -29,10 +23,8 @@
                 </div>
             </div>
         </div>
-        <!-- End Clgun Banner 2 Area -->
+        
 
-        <!-- Start About Us Area 2 -->
-        <!-- Section About -->
 <section id="about" class="about-us-area-2 ptb-100">
   <div class="container">
     <div class="section-title" data-aos="fade-up" data-aos-delay="100">
@@ -52,7 +44,8 @@
     </div>
   </div>
 </section>
-<!-- Modal: Sambutan Dekan -->
+
+
 <div class="modal fade" id="modalSambutan" tabindex="-1" aria-labelledby="modalSambutanLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content text-white bg-dark">
@@ -69,8 +62,7 @@
             <p class="text-center fst-italic">Dekan Fakultas Psikologi</p>  
         </div>
           
-
-          <!-- Teks Sambutan -->
+        
           <div class="col-md-8">
             <p>
               Fakultas Psikologi berkomitmen untuk memberikan pendidikan yang berkualitas dan relevan dengan perkembangan ilmu pengetahuan serta kebutuhan masyarakat.

@@ -30,9 +30,9 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li class="nav-item"><a href="program_studi.php" class="nav-link">Program Akademik</a></li>
-                                <li class="nav-item"><a href="news-and-blog.html" class="nav-link">Kemahasiswaan</a></li>
-                                <li class="nav-item"><a href="blog-details.html" class="nav-link">Jadwal Kuliah</a></li>
-                                <li class="nav-item"><a href="alumni.html" class="nav-link">Surat Mahasiswa </a></li>
+                                <li class="nav-item"><a href="kemahasiswaan.php" class="nav-link">Kemahasiswaan</a></li>
+                                <li class="nav-item"><a href="jadwal_kuliah.php" class="nav-link">Jadwal Kuliah</a></li>
+                                <li class="nav-item"><a href="surat_mahasiswa.php" class="nav-link">Surat Mahasiswa </a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -109,13 +109,13 @@
                                        <a href="program_studi.php" class="accordion-link">Program Akademik</a>
                                    </div>
                                    <div class="accordion-item">
-                                       <a href="news-and-blog.html" class="accordion-link">Kemahasiswaan</a>
+                                       <a href="kemahasiswaan.php" class="accordion-link">Kemahasiswaan</a>
                                    </div>
                                    <div class="accordion-item">
-                                       <a href="blog-details.html" class="accordion-link">Jadwal Kuliah</a>
+                                       <a href="jadwal_kuliah.php" class="accordion-link">Jadwal Kuliah</a>
                                    </div>
                                    <div class="accordion-item">
-                                       <a href="alumni.html" class="accordion-link">Surat Mahasiswa</a>
+                                       <a href="surat_mahasiswa.php" class="accordion-link">Surat Mahasiswa</a>
                                    </div>
                                </div>
                            </div>

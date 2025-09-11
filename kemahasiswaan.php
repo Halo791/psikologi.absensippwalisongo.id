@@ -5,7 +5,7 @@
 <!-- Start Section Banner Area -->
 <div class="section-banner bg-16">
     <div class="container">
-        <div class="banner-spacing text-center">
+        <div class="banner-spacing">
             <div class="section-info">
                 <h2 data-aos="fade-up" data-aos-delay="100">Kemahasiswaan</h2>
                 <p data-aos="fade-up" data-aos-delay="200">
@@ -15,9 +15,8 @@
         </div>
     </div>
 </div>
-<!-- End Section Banner Area -->
 
-<!-- Start Kemahasiswaan Content -->
+
 <div class="academics-section ptb-100">
     <div class="container">
         <div class="row">
@@ -45,43 +44,43 @@
 
                     <!-- Item -->
                     <div class="col-md-6 mb-4 text-center">
-                        <img src="images/kemahasiswaan/bem-f.png" alt="BEM-F" class="img-fluid mb-3" style="max-height:100px;">
+                        <img src="uploads/BEM.png" alt="BEM-F" class="img-fluid mb-3" style="max-height:100px;">
                         <h5 class="fw-bold">BEM–F</h5>
                         <p>Badan Eksekutif Mahasiswa Fakultas Psikologi</p>
                     </div>
 
                     <div class="col-md-6 mb-4 text-center">
-                        <img src="images/kemahasiswaan/dpm-f.png" alt="DPM-F" class="img-fluid mb-3" style="max-height:100px;">
+                        <img src="uploads/DPM.png" alt="DPM-F" class="img-fluid mb-3" style="max-height:100px;">
                         <h5 class="fw-bold">DPM–F</h5>
                         <p>Dewan Perwakilan Mahasiswa Fakultas Psikologi</p>
                     </div>
 
                     <div class="col-md-6 mb-4 text-center">
-                        <img src="images/kemahasiswaan/ikapsi.png" alt="IKAPSI" class="img-fluid mb-3" style="max-height:100px;">
+                        <img src="uploads/ikapsi.png" alt="IKAPSI" class="img-fluid mb-3" style="max-height:100px;">
                         <h5 class="fw-bold">IKAPSI</h5>
                         <p>Ikatan Alumni Psikologi Fakultas Psikologi</p>
                     </div>
 
                     <div class="col-md-6 mb-4 text-center">
-                        <img src="images/kemahasiswaan/mahessa.png" alt="MAHESSA" class="img-fluid mb-3" style="max-height:100px;">
+                        <img src="uploads/mahessa.png" alt="MAHESSA" class="img-fluid mb-3" style="max-height:100px;">
                         <h5 class="fw-bold">MAHESSA</h5>
                         <p>Mahasiswa Birokrat Sosial Fakultas Psikologi</p>
                     </div>
 
                     <div class="col-md-6 mb-4 text-center">
-                        <img src="images/kemahasiswaan/kompas.png" alt="KOMPAS" class="img-fluid mb-3" style="max-height:100px;">
+                        <img src="uploads/kompas.png" alt="KOMPAS" class="img-fluid mb-3" style="max-height:100px;">
                         <h5 class="fw-bold">KOMPAS</h5>
                         <p>Komunitas Mahasiswa Peduli Disabilitas Fakultas Psikologi</p>
                     </div>
 
                     <div class="col-md-6 mb-4 text-center">
-                        <img src="images/kemahasiswaan/harpsi.png" alt="HARPSI" class="img-fluid mb-3" style="max-height:100px;">
+                        <img src="uploads/harpsi.png" alt="HARPSI" class="img-fluid mb-3" style="max-height:100px;">
                         <h5 class="fw-bold">HARPSI</h5>
                         <p>Harmoni Psikologi Fakultas Psikologi</p>
                     </div>
 
                     <div class="col-md-6 mb-4 text-center">
-                        <img src="images/kemahasiswaan/komenpsi.png" alt="KOMENPSI" class="img-fluid mb-3" style="max-height:100px;">
+                        <img src="uploads/komenpsi.png" alt="KOMENPSI" class="img-fluid mb-3" style="max-height:100px;">
                         <h5 class="fw-bold">KOMENPSI</h5>
                         <p>Komunitas Menulis Fakultas Psikologi</p>
                     </div>
