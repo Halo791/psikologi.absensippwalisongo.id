@@ -36,7 +36,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="javascript:void(0)" class="nav-link">
+                            <a href="laboratorium.php" class="nav-link">
                                 Laboratorium
                             </a>
                             
@@ -124,7 +124,7 @@
        
                    <!-- Laboratorium -->
                    <div class="accordion-item">
-                       <a class="accordion-link without-icon" href="laboratorium.html">
+                       <a class="accordion-link without-icon" href="laboratorium.php">
                            Laboratorium
                        </a>
                    </div>
