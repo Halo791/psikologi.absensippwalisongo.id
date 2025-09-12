@@ -46,19 +46,19 @@
                                 Layanan
                             </a>
                             <ul class="dropdown-menu">
-                                <li class="nav-item"><a href="admission.html" class="nav-link">LPT</a></li>
+                                <li class="nav-item"><a href="lpt.php" class="nav-link">LPT</a></li>
                                 <li class="nav-item"><a href="how-to-apply.html" class="nav-link">PAUD "Ananda"</a></li>
                                 <li class="nav-item"><a href="tuition-fees.html" class="nav-link">JPT</a></li>
                                 <li class="nav-item"><a href="financial-aid.html" class="nav-link">Pusat Studi</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="javascript:void(0)" class="nav-link">
+                            <a href="berita_agenda.php" class="nav-link">
                                 Berita & Agenda
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="javascript:void(0)" class="nav-link">
+                            <a href="https://unmer.ac.id/" class="nav-link">
                                 Tentang Unmer
                             </a>
                     </ul>
@@ -138,7 +138,7 @@
                            <div class="accordion-body">
                                <div class="accordion">
                                    <div class="accordion-item">
-                                       <a href="admission.html" class="accordion-link">LPT</a>
+                                       <a href="lpt.php" class="accordion-link">LPT</a>
                                    </div>
                                    <div class="accordion-item">
                                        <a href="how-to-apply.html" class="accordion-link">PAUD "Ananda"</a>

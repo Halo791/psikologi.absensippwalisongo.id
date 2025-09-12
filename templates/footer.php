@@ -31,7 +31,7 @@
                                 <div class="footer-widget">
                                     <h4>Layanan</h4>
                                     <ul>
-                                        <li><a href="admission.html"><i class='bx bx-chevron-right'></i> LPT</a></li>
+                                        <li><a href="lpt.php"><i class='bx bx-chevron-right'></i> LPT</a></li>
                                         <li><a href="how-to-apply.html"><i class='bx bx-chevron-right'></i> PAUD "Ananda"</a></li>
                                         <li><a href="tuition-fees.html"><i class='bx bx-chevron-right'></i> JPT</a></li>
                                         <li><a href="financial-aid.html"><i class='bx bx-chevron-right'></i> Pusat Studi</a></li>
@@ -44,8 +44,8 @@
                                 <div class="footer-widget">
                                     <h4>Informasi</h4>
                                     <ul>
-                                        <li><a href="berita-agenda.html"><i class='bx bx-chevron-right'></i> Berita & Agenda</a></li>
-                                        <li><a href="tentang-unmer.html"><i class='bx bx-chevron-right'></i> Tentang UNMER</a></li>
+                                        <li><a href="berita_agenda.php"><i class='bx bx-chevron-right'></i> Berita & Agenda</a></li>
+                                        <li><a href="https://unmer.ac.id/"><i class='bx bx-chevron-right'></i> Tentang UNMER</a></li>
                                         <li><a href="contact-us.html"><i class='bx bx-chevron-right'></i> Hubungi Kami</a></li>
                                     </ul>
                                 </div>
