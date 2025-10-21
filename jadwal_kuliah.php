@@ -1,6 +1,54 @@
 <?php include 'templates/header.php'; ?>
 <?php include 'templates/sidebar.php'; ?>
 
+<style>
+    .folder-section {
+    background: #fcead0;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  .folder-title {
+    font-weight: bold;
+    color: #333;
+  }
+  .folder-subtitle {
+    color: #555;
+  }
+  .file-list iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+  }
+  .file-preview {
+    display: none;
+    margin-top: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .file-preview iframe {
+    width: 100%;
+    height: 90vh;
+    border: none;
+  }
+  .file-item {
+    display: block;
+    background: #fff;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    text-align: left;
+    color: #333;
+    transition: 0.3s;
+    border: 1px solid #eee;
+  }
+  .file-item:hover {
+    background: #ffe7c2;
+  }
+</style>
 
 <div class="section-banner bg-16">
     <div class="container">
@@ -28,6 +76,7 @@
                             <li><a href="kemahasiswaan.php">Kemahasiswaan</a></li>
                             <li><a class="active" href="jadwal_kuliah.php">Jadwal Kuliah</a></li>
                             <li><a href="surat_mahasiswa.php">Persuratan Mahasiswa</a></li>
+                            <li><a href="dosen.php">Dosen Kami</a></li>
                         </ul>
                     </div>
                     <div class="default-btn mt-3">
@@ -35,13 +84,28 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-8 text-center">
-                <div class="p-4" style="background:#fcead0; border-radius:10px;">
-                    <h3>Semester Genap 2025/2026</h3>
-                    <h1><b>COMING SOON</b></h1>
-                    <p>Silakan cek kembali di halaman ini untuk update terbaru.</p>
+            <div class="col-lg-8 mx-auto text-center">
+            <div class="folder-section">
+                <h3 class="folder-title">Semester Genap 2025/2026</h3>
+                <h4 class="fw-bold mb-3">📂 Jadwal Kuliah</h4>
+
+                <!-- Folder List (Google Drive Embedded View) -->
+                <div class="file-list mb-3 shadow-sm">
+                <iframe 
+                    src="https://drive.google.com/embeddedfolderview?id=1kybu0nvba14UlTfUNOnhIXwTwdk-MjsZ#list" 
+                    allowfullscreen>
+                </iframe>
+                </div>
+
+                <p class="folder-subtitle">Klik salah satu file di atas untuk melihat pratinjau langsung.</p>
+
+                <!-- File Preview Area -->
+                <div id="filePreview" class="file-preview">
+                <iframe id="previewFrame" allowfullscreen></iframe>
                 </div>
             </div>
+            </div>
+
 
         </div>
     </div>
@@ -52,3 +116,35 @@
 </div>
 
 <?php include 'templates/footer.php'; ?>
+<script>
+  // Tangkap klik link di dalam iframe daftar file
+  document.addEventListener("DOMContentLoaded", function() {
+    const folderFrame = document.querySelector(".file-list iframe");
+    const previewBox = document.getElementById("filePreview");
+    const previewFrame = document.getElementById("previewFrame");
+
+    // Deteksi klik di iframe daftar file
+    folderFrame.addEventListener("load", function() {
+      const innerDoc = folderFrame.contentDocument || folderFrame.contentWindow.document;
+      const links = innerDoc.querySelectorAll('a');
+      
+      links.forEach(link => {
+        link.addEventListener('click', e => {
+          e.preventDefault();
+          const href = link.getAttribute('href');
+          
+          // Ambil ID file dari URL
+          const match = href.match(/[-\w]{25,}/);
+          if (match) {
+            const fileId = match[0];
+            const previewUrl = `https://docs.google.com/gview?embedded=true&url=https://drive.google.com/uc?export=download&id=${fileId}`;
+            
+            previewFrame.src = previewUrl;
+            previewBox.style.display = 'block';
+            window.scrollTo({ top: previewBox.offsetTop - 50, behavior: 'smooth' });
+          }
+        });
+      });
+    });
+  });
+</script>

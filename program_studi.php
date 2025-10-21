@@ -27,12 +27,18 @@
                                     <li><a href="kemahasiswaan.php">Kemahasiswaan</a></li>
                                     <li><a href="jadwal_kuliah.php">Jadwal Kuliah</a></li>
                                     <li><a href="surat_mahasiswa.php">Persuratan Mahasiswa</a></li>
+                                    <li><a href="dosen.php">Dosen Kami</a></li>
                                 </ul>
                             </div>
                             
                             <div class="default-btn">
-                                <a href="contact-us.html">Hubungi Bu Usla</a>
+                            <a href="https://wa.me/6285646764500?text=Halo%20Bu%20Usla,%20saya%20ingin%20bertanya%20tentang%20koordinasi%20skripsi%20di%20Fakultas%20Psikologi%20UNMER%20Malang."
+                                target="_blank"
+                                class="text-decoration-none text-black fw-semibold">
+                                Hubungi Bu Usla
+                            </a>
                             </div>
+
                         </div>
                     </div>
                     <div class="col-lg-8">
@@ -41,55 +47,56 @@
                                 <p>Sebagian besar berita dan pengumuman Akademik kita sangat penting bagi mahasiswa. Maka mampirlah sejenak.</p>
                                 <div class="faq-content">
 
-                                <!-- Skripsi -->
-                                 <div class="faq-item">
-                                    <div class="faq-question">Skripsi</div>
-                                    <div class="icon-container"><i class='bx bx-chevron-down'></i></div>
+                                <!-- FAQ - Skripsi -->
+                                <div class="faq-item">
+                                <div class="faq-question">Skripsi</div>
+                                <div class="icon-container"><i class='bx bx-chevron-down'></i></div>
                                 </div>
                                 <div class="faq-answer">
-                                    <div class="list-item-list">
-                                        <h4>Informasi Skripsi</h4>
-                                        <p>Skripsi adalah karya tulis ilmiah yang berisi laporan hasil penelitian, mencakup perumusan masalah, pengumpulan dan analisis data, hingga 
-        penarikan kesimpulan. Skripsi disusun secara mandiri oleh mahasiswa pada akhir masa studi sebagai bukti kemampuan melakukan penelitian secara ilmiah.</p>
-                                        <p>Tujuan skripsi adalah untuk menilai kemampuan mahasiswa dalam memecahkan masalah secara ilmiah, menerapkan metode penelitian dengan benar, serta melakukan penalaran secara logis.</p>
-                                        <h4>Syarat Pengajuan Skripsi</h4>
-                                        <div class="row">
-                                            <div class="col-lg-6 col-6">
-                                                <div class="list-items-details">
-                                                    <ul>
-                        <li><p>Telah menempuh minimal 120 SKS</p></li>
-                        <li><p>Telah lulus mata kuliah Metodologi Penelitian</p></li>
-                        <li><p>IPK minimal 2.75</p></li>
-                        <li><p>Tidak memiliki tunggakan administrasi</p></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-6 col-6">
-                <div class="list-items-details">
-                    <ul>
-                        <li><p>Terdaftar di semester aktif</p></li>
-                        <li><p>Telah menyelesaikan KKL</p></li>
-                        <li><p>Mengisi form pengajuan skripsi</p></li>
-                        <li><p>Mengikuti pembekalan skripsi</p></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="text-center mt-3">
-            <a href="skripsi_detail.html" class="btn btn-primary">Informasi Selanjutnya</a>
-        </div>
-    </div>
-</div>
-                                <!-- MBKM -->
+                                <div class="list-item-list">
+                                    <h4>Syarat Pengajuan Skripsi</h4>
+                                    <div class="row">
+                                    <div class="col-lg-6 col-6">
+                                    <div class="list-items-details">
+                                        <ul>
+                                        <li><p>Berstatus sebagai mahasiswa aktif kuliah, dengan menunjukkan kepemilikan kartu mahasiswa (KTM) yang masih berlaku.</p></li>
+                                        <li><p>Telah menyelesaikan mata kuliah minimal 130 SKS.</p></li>
+                                        <li><p>Telah mengikuti kegiatan PKKMB yang dibuktikan dengan sertifikat PKKMB bagi mahasiswa angkatan 2019 dan seterusnya.</p></li>
+                                        <li><p>Memiliki nilai D tidak lebih dari 2 (dua) mata kuliah.</p></li>
+                                        <li><p>Tidak ada mata kuliah dengan nilai E.</p></li>
+                                        </ul>
+                                    </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-6">
+                                    <div class="list-items-details">
+                                        <h6 class="fw-bold mb-2">Telah lulus mata kuliah prasyarat skripsi, antara lain:</h6>
+                                        <ul>
+                                        <li><p>Pengantar Asesmen</p></li>
+                                        <li><p>Statistik</p></li>
+                                        <li><p>Metodologi Penelitian Kuantitatif</p></li>
+                                        <li><p>Metode Penelitian Kualitatif</p></li>
+                                        <li><p>Metode Penelitian Eksperimen</p></li>
+                                        <li><p>Psikometri</p></li>
+                                        <li><p>Penyusunan Skala Psikologi</p></li>
+                                        </ul>
+                                    </div>
+                                    </div>
+
+                                    </div>
+                                    <div class="text-center mt-3">
+                                    <a href="skripsi.php" class="btn btn-primary">Informasi Selanjutnya</a>
+                                    </div>
+                                </div>
+                                </div>
+
+                                <!-- FAQ - MBKM -->
                                 <div class="faq-item">
                                 <div class="faq-question">MBKM</div>
                                 <div class="icon-container"><i class='bx bx-chevron-down'></i></div>
                                 </div>
                                 <div class="faq-answer">
                                 <div class="list-item-list">
-                                    <h4>Informasi MBKM</h4>
-                                    <ul><p>Program MBKM bertujuan meningkatkan kompetensi lulusan, baik soft skill maupun hard skill, agar lebih siap menghadapi kebutuhan zaman. 
-                                Selain itu, program ini diharapkan melahirkan pemimpin masa depan yang unggul dan kompetitif, sekaligus memberi kesempatan mahasiswa mengembangkan potensi sesuai minat dan bakat melalui experiential learning.<p></ul>
                                     <h4>Syarat dan Prosedur MBKM</h4>
                                     <div class="row">
                                     <div class="col-lg-6 col-6">
@@ -114,61 +121,43 @@
                                     </div>
                                     </div>
                                     <div class="text-center mt-3">
-                                    <a href="mbkm_detail.html" class="btn btn-primary">Informasi Selanjutnya</a>
+                                    <a href="mbkm.php" class="btn btn-primary">Informasi Selanjutnya</a>
                                     </div>
                                 </div>
                                 </div>
 
-                                <!-- PKM -->
+                                <!-- FAQ - PKM -->
                                 <div class="faq-item">
                                 <div class="faq-question">Program Kreativitas Mahasiswa</div>
                                 <div class="icon-container"><i class='bx bx-chevron-down'></i></div>
                                 </div>
                                 <div class="faq-answer">
                                 <div class="list-item-list">
-                                    <h4></h4>
                                     <h4>Informasi PKM</h4>
-                                    <ul>
-                                        <li>
-                                            <p><strong>Program Kreativitas Mahasiswa</strong> adalah kegiatan untuk meningkatkan mutu mahasiswa
-                                        agar mampu menerapkan, mengembangkan, dan menyebarluaskan ilmu pengetahuan, teknologi, seni, serta memperkaya budaya nasional</p>
-                                    </li>
-                                    <li>
-                                        <p>PKM 5 Bidang terdiri dari:</p>
+                                    <div class="row">
+                                    <div class="col-lg-6 col-6">
+                                        <div class="list-items-details">
                                         <ul>
-                                            <li><strong>PKM-P:</strong> Penelitian</li>
-                                            <li><strong>PKM-K:</strong> Kewirausahaan</li>
-                                            <li><strong>PKM-M:</strong> Pengabdian Masyarakat</li>
-                                            <li><strong>PKM-T:</strong> Teknologi</li>
-                                            <li><strong>PKM-KC:</strong> Karsa Cipta</li>
+                                            <li><p>PKM-Penelitian</p></li>
+                                            <li><p>PKM-Kewirausahaan</p></li>
+                                            <li><p>PKM-Pengabdian Masyarakat</p></li>
+                                            <li><p>PKM-Gagasan Futuristik</p></li>
                                         </ul>
-                                    </li>
-                                    </ul>
-
-                                    <h4>Persyaratan PKM</h4>
-                                    <ul>
-                                        <li>
-                                            <p>Mahasiswa aktif program Diploma atau Sarjana</p>
-                                        </li>
-                                        <li>
-                                            <p>Mahasiswa boleh bergabung di >2 tim pengusul, tetapi hanya bisa terlibat pada <strong>maksimal 2 judul proposal yang didanai</strong> (baik sebagai ketua maupun anggota).</p>
-                                        </li>
-                                        <li>
-                                            <p>Dosen pendamping boleh mendampingi lebih dari 10 tim pengusul, tetapi hanya maksimal <strong>10 tim yang didanai</strong>.</p>
-                                        </li>
-                                        <li>
-                                            <p>Jumlah anggoota tim:</p>
-                                            <ul>
-                                                <li><strong>3-5 orang</strong> untuk PKM-K, PKM-T, dan PKM-M.</li>
-                                                <li><strong>Maksimal 3 orang</strong> untuk PKM-P,PKM-KC dan PKM-KT</li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <p>Ketua tim hanya boleh mengajukan <strong>1 judul proposal</strong>. dalam satu periode PKM.</p>
-                                        </li>
-                                    </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-6">
+                                        <div class="list-items-details">
+                                        <ul>
+                                            <li><p>Proposal sesuai panduan</p></li>
+                                            <li><p>Tim maksimal 5 orang</p></li>
+                                            <li><p>Pembimbing 1 orang dosen</p></li>
+                                            <li><p>Didanai oleh Kemendikbud jika lolos</p></li>
+                                        </ul>
+                                        </div>
+                                    </div>
+                                    </div>
                                     <div class="text-center mt-3">
-                                    <a href="pkm_detail.html" class="btn btn-primary">Informasi Selanjutnya</a>
+                                    <a href="pkm.php" class="btn btn-primary">Informasi Selanjutnya</a>
                                     </div>
                                 </div>
                                 </div>
@@ -180,30 +169,31 @@
                                 </div>
                                 <div class="faq-answer">
                                 <div class="list-item-list">
-                                    <h4>Informasi KKN</h4>
-                                    <p>Kuliah Kerja Nyata (KKN) adalah bentuk kegiatan pengabdian kepada masyarakat oleh
-                                    mahasiswa dengan pendekatan lintas keilmuan dan sektoral pada waktu serta daerah tertentu di Indonesia.</p>
-                                    <h4>Tujuan KKN</h4>
+                                    <h4>Informasi dan Tahapan KKN</h4>
                                     <div class="row">
                                     <div class="col-lg-6 col-6">
                                         <div class="list-items-details">
                                         <ul>
-                                            <li><p>Meningkatkan kepedulian civitas akademika dalam membantu masyarakat.</p></li>
-                                            <li><p>Melakukan pemberdayaan masyarakat di lingkungan sekitar kampus.</p></li>
-                                    </ul>
+                                            <li><p>Telah menempuh 100 SKS</p></li>
+                                            <li><p>IPK minimal 2.5</p></li>
+                                            <li><p>Terdaftar di semester aktif</p></li>
+                                            <li><p>Telah mengikuti pembekalan KKN</p></li>
+                                        </ul>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-6">
                                         <div class="list-items-details">
                                         <ul>
-                                            <li><p>Membangun kerjasama dengan berbagai pihak dalam penguatan dan pemberdayaan masyarakat.</p></li>
-                                            <li><p>Meningkatkan kemampuan masyarakat dalam aspek ekonomi, sosial, budaya dan pendidikan.</p></li>
-                                            </ul>
+                                            <li><p>Penempatan ditentukan LPPM</p></li>
+                                            <li><p>Pelaksanaan 1–2 bulan</p></li>
+                                            <li><p>Laporan kegiatan dan presentasi</p></li>
+                                            <li><p>Wajib membuat produk pengabdian</p></li>
+                                        </ul>
                                         </div>
                                     </div>
                                     </div>
                                     <div class="text-center mt-3">
-                                    <a href="kkn_detail.html" class="btn btn-primary">Informasi Selanjutnya</a>
+                                    <a href="kkn.php" class="btn btn-primary">Informasi Selanjutnya</a>
                                     </div>
                                 </div>
                                 </div>

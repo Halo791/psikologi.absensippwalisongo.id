@@ -12,6 +12,7 @@
                                         <li><a href="kemahasiswaan.php"><i class='bx bx-chevron-right'></i> Kemahasiswaan</a></li>
                                         <li><a href="jadwal_kuliah.php"><i class='bx bx-chevron-right'></i> Jadwal Kuliah</a></li>
                                         <li><a href="surat_mahasiswa.php"><i class='bx bx-chevron-right'></i> Surat Mahasiswa</a></li>
+                                        <li><a href="dosen.php"><i class='bx bx-chevron-right'></i> Dosen Kami</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -70,10 +71,9 @@
                                     <li><a href="#">Cookie Policy</a></li>
                                 </ul>
                                 <ul class="social-list">
-                                    <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
-                                    <li><a href="#"><i class='bx bxl-instagram-alt'></i></a></li>
-                                    <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
-                                    <li><a href="#"><i class='bx bxl-linkedin-square'></i></a></li>
+                                    <li><a href="https://www.facebook.com/p/psiunmermlg-100081348555586/" target="_blank"><i class='bx bxl-facebook'></i></a></li>
+                                    <li><a href="https://www.instagram.com/psikologi.unmer/?hl=en#:~:text=Psikologi%20Unmer%20Malang%20(%40psikologi.,%E2%80%A2%20Instagram%20photos%20and%20videos" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+                                    <li><a href="https://www.youtube.com/@psikologi.unmermlg/" target="_blank"><i class='bx bxl-youtube'></i></a></li>
                                 </ul>
                             </div>
                         </div>

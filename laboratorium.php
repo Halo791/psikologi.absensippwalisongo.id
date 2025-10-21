@@ -36,25 +36,31 @@
 
         <!-- Laboratories Section -->
         <div id="laboratories">
-            <div class="laboratory-item mb-5">
-                <div class="row align-items-center">
-                    <div class="col-lg-5">
-                        <div class="lab-image">
-                            <img src="uploads/lab 1.png" alt="Laboratorium Psikodiagnostik" class="img-fluid rounded">
-                        </div>
-                    </div>
-                    <div class="col-lg-7">
-                        <div class="lab-content ps-lg-4">
-                            <h3 class="mb-3">Laboratorium Psikodiagnostik</h3>
-                            <p class="mb-4">Praktikum psikodiagnostik diselenggarakan untuk memberikan pengalaman praktis, memperkaya wawasan, dan keterampilan mahasiswa, serta sebagai Laboratorium Konseling dan Laboratorium Pengembangan Alat Ukur.</p>
-                            <div class="text-start">
-                                <a href="#" class="btn btn-primary rounded-pill px-4 py-2">Jelajahi</a>
-                            </div>
-                        </div>
+        <div class="laboratory-item mb-5">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                <div class="lab-image">
+                    <img src="uploads/lab 1.png" alt="Laboratorium Psikodiagnostik" class="img-fluid rounded">
+                </div>
+                </div>
+                <div class="col-lg-7">
+                <div class="lab-content ps-lg-4">
+                    <h3 class="mb-3">Laboratorium Psikodiagnostik</h3>
+                    <p class="mb-4">
+                    Praktikum psikodiagnostik diselenggarakan untuk memberikan pengalaman praktis, memperkaya wawasan, dan keterampilan mahasiswa, 
+                    serta sebagai Laboratorium Konseling dan Laboratorium Pengembangan Alat Ukur.
+                    </p>
+                    <div class="text-start d-flex flex-wrap gap-2">
+                    <a href="https://wa.me/6281232693236?text=Halo%20Bu%20Husnul%2C%20saya%20ingin%20bertanya%20tentang%20Laboratorium%20Psikodiagnostik."
+                        class="default-btn"
+                        target="_blank">
+                        Hubungi Bu Khusnul
+                    </a>
                     </div>
                 </div>
+                </div>
             </div>
-
+            </div>
             <!-- Laboratorium Perkembangan -->
             <div class="laboratory-item mb-5">
                 <div class="row align-items-center">
@@ -62,9 +68,6 @@
                         <div class="lab-content pe-lg-4">
                             <h3 class="mb-3">Laboratorium Perkembangan</h3>
                             <p class="mb-4">Laboratorium Perkembangan menjadi tempat bagi mahasiswa untuk melakukan observasi terhadap perkembangan anak usia dini. Laboratorium ini diperuntukkan bagi mahasiswa yang mengambil mata kuliah Perkembangan dan Pendidikan Anak Usia Dini.</p>
-                            <div class="text-start">
-                                <a href="#" class="btn btn-primary rounded-pill px-4 py-2">Jelajahi</a>
-                            </div>
                         </div>
                     </div>
                     <div class="col-lg-5 order-lg-2">

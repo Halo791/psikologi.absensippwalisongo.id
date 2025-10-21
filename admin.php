@@ -1,101 +1,126 @@
 <?php
 session_start();
-if (!isset($_SESSION['login'])) {
+if (!isset($_SESSION['username'])) {
     header("Location: login.php");
-    exit;
+    exit();
 }
-include 'koneksi.php';
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>Admin Panel - Events</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            background: #f5f5f5;
-        }
-        h2 {
-            text-align: center;
-        }
-        a.button {
-            display: inline-block;
-            padding: 8px 16px;
-            background: #007BFF;
-            color: white;
-            text-decoration: none;
-            border-radius: 4px;
-            margin-bottom: 20px;
-        }
-        a.logout {
-            float: right;
-            margin-top: -40px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            background: white;
-            box-shadow: 0 0 10px #ccc;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 12px;
-            vertical-align: top;
-        }
-        th {
-            background: #007BFF;
-            color: white;
-        }
-        td img {
-            border-radius: 4px;
-        }
-        .action-icons a {
-            margin-right: 10px;
-            text-decoration: none;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Psikologi Unmer</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+  }
+
+  .sidebar {
+    width: 230px;
+    background-color: #2c3e50;
+    color: white;
+    height: 100vh;
+    padding-top: 20px;
+    position: fixed;
+  }
+
+  .sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .sidebar ul li {
+    padding: 10px 20px;
+  }
+
+  .sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+
+  .sidebar ul li a:hover {
+    background-color: #34495e;
+  }
+
+  .main-content {
+    margin-left: 230px;
+    padding: 20px;
+    width: 100%;
+    background-color: #ecf0f1;
+    min-height: 100vh;
+  }
+
+  .card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .success {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+  }
+
+  .badge {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+  }
+  .bg-featured { background-color: #2980b9; }
+  .bg-recent { background-color: #27ae60; }
+  .bg-upcoming { background-color: #f39c12; }
+</style>
 </head>
 <body>
 
-<h2>Admin Panel - Events</h2>
-<a href="form_event.php" class="button">➕ Tambah Event</a>
-<a href="logout.php" class="button logout">🚪 Logout</a>
+<!-- Sidebar -->
+<div class="sidebar">
+  <h2>Admin Psikologi Unmer</h2>
+  <ul>
+    <li><a href="admin.php?page=dashboard">🏠 Dashboard</a></li>
+    <li><a href="admin.php?page=surat">📄 Pengajuan Surat</a></li>
+    <li><a href="admin.php?page=events">🎉 Event Page</a></li>
+    <li><a href="logout.php">🚪 Logout</a></li>
+  </ul>
+</div>
 
-<table>
-    <tr>
-        <th>Image</th>
-        <th>Category</th>
-        <th>Title</th>
-        <th>Date</th>
-        <th>Description</th>
-        <th>Location</th>
-        <th>Link</th>
-        <th>Tag</th>
-        <th>Action</th>
-    </tr>
-<?php
-$sql = "SELECT * FROM events ORDER BY event_date DESC";
-$result = $conn->query($sql);
-while ($row = $result->fetch_assoc()):
-?>
-    <tr>
-        <td><img src="uploads/<?= $row['image'] ?>" width="100"></td>
-        <td><?= $row['category'] ?></td>
-        <td><?= $row['title'] ?></td>
-        <td><?= $row['event_date'] ?></td>
-        <td><?= $row['description'] ?></td>
-        <td><?= $row['location'] ?></td>
-        <td><a href="<?= $row['link'] ?>" target="_blank">Link</a></td>
-        <td><?= $row['tag'] ?></td>
-        <td class="action-icons">
-            <a href="form_event.php?id=<?= $row['id'] ?>">✏️</a>
-            <a href="delete_event.php?id=<?= $row['id'] ?>" onclick="return confirm('Hapus?')">🗑️</a>
-        </td>
-    </tr>
-<?php endwhile; ?>
-</table>
+<!-- Main Content -->
+<div class="main-content">
+  <?php
+  // Menentukan halaman yang ditampilkan
+  $page = isset($_GET['page']) ? $_GET['page'] : 'dashboard';
+
+  switch ($page) {
+      case "surat":
+          include "pages/surat.php"; // CRUD Pengajuan Surat
+          break;
+
+      case "events":
+          include "pages/events.php"; // CRUD Event/News
+          break;
+
+      case "dashboard":
+      default:
+          echo "<div class='card'><h2>Selamat Datang di Admin Panel</h2>
+                <p>Pilih menu di sidebar untuk mulai mengelola data.</p></div>";
+          break;
+  }
+  ?>
+</div>
 
 </body>
 </html>
