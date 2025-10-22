@@ -807,7 +807,7 @@ font-weight: 500;
     padding-top: 4px;
 }
 .navbar-area.style-2 .navbar .other-option .option-item .search-btn {
-    color: var(--whiteColor);
+    color: #d58d20;
 }
 .navbar-area.style-2.sticky .navbar .other-option .option-item .search-btn {
     color: var(--blackColor);
