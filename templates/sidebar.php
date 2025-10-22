@@ -49,7 +49,7 @@
     <div class="navbar-area style-2" id="navbar">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="index.php">
                     <img class="logo-light" src="../Template_file/canyon/assets/img/logo/LOGO-PSI.png" alt="logo">
                     <img class="logo-dark" src="../Template_file/canyon/assets/img/logo/LOGO-PSI.png" alt="logo">
                 </a>
@@ -135,7 +135,7 @@
             <div class="container-fluid">
                 <div class="row align-items-center">
                     <div class="col-8">
-                        <a href="index.html" class="logo d-inline-block">
+                        <a href="index.php" class="logo d-inline-block">
                             <img class="logo-light img-fluid" src="../Template_file/canyon/assets/img/logo/LOGO-PSI.png" alt="logo" style="max-height: 40px;">
                         </a>
                     </div>
@@ -271,7 +271,7 @@
         <!-- Start Clgun Searchbar Area -->
         <div class="clgun offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop">
             <div class="offcanvas-header">
-                <a href="index.html" class="logo">
+                <a href="index.php" class="logo">
                     <img src="Template_file/canyon/assets/img/logo/LOGO-PSI.png" alt="image">
                 </a>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
