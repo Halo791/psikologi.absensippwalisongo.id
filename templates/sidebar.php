@@ -43,42 +43,6 @@
             display: none; /* diganti dengan offcanvas/menu mobile */
         }
     }
-    /* Custom styles for offcanvas header */
-    .offcanvas-header {
-        padding: 1rem 1.5rem;
-        border-bottom: 1px solid #eee;
-    }
-
-    .offcanvas-header .d-flex {
-        min-height: 50px;
-    }
-
-    .logo-light {
-        max-height: 40px !important;
-        width: auto;
-    }
-
-    .btn-close-custom {
-        margin: 0 !important;
-        padding: 0.5rem !important;
-        background-size: 1rem !important;
-        opacity: 0.8;
-    }
-
-    .btn-close-custom:hover {
-        opacity: 1;
-    }
-
-    /* Ensure proper spacing on mobile */
-    @media (max-width: 576px) {
-        .offcanvas-header {
-            padding: 0.75rem 1rem;
-        }
-        
-        .logo-light {
-            max-height: 35px !important;
-        }
-    }
     
     </style>
 <header class="main-header">
@@ -167,12 +131,17 @@
 
        <!-- Start Responsive Navbar Area -->
        <div class="responsive-navbar offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="navbarOffcanvas">
-           <div class="offcanvas-header">
-               <a href="index.html" class="logo d-inline-block">
-                   <img class="logo-light" src="../Template_file/canyon/assets/img/logo/LOGO-PSI.png" alt="logo">
-               </a>
-               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-           </div>
+        <div class="offcanvas-header">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-8">
+                        <a href="index.html" class="logo d-inline-block">
+                            <img class="logo-light img-fluid" src="../Template_file/canyon/assets/img/logo/LOGO-PSI.png" alt="logo" style="max-height: 40px;">
+                        </a>
+                    </div>
+                    <div class="col-4 text-end">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
            <div class="offcanvas-body">
                <div class="accordion" id="navbarAccordion">
                    <!-- Beranda -->
