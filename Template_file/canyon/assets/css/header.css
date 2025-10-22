@@ -3,7 +3,7 @@
     top: 0px;
     left: 0;
     width: 100%;
-    background-color: var(--whiteColor);
+    background-color: #000;
     z-index: 10;
 }
 .navbar-area.style-2{
