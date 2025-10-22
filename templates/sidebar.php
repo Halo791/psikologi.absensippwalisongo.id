@@ -131,12 +131,13 @@
 
        <!-- Start Responsive Navbar Area -->
        <div class="responsive-navbar offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="navbarOffcanvas">
-           <div class="offcanvas-header">
-               <a href="index.html" class="logo d-inline-block">
-                   <img class="logo-light" src="../Template_file/canyon/assets/img/logo/LOGO-PSI.png" alt="logo">
-               </a>
-               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-           </div>
+        <div class="offcanvas-header">
+            <div class="d-flex justify-content-between align-items-center w-100">
+                <a href="index.html" class="logo d-inline-block">
+                    <img class="logo-light" src="../Template_file/canyon/assets/img/logo/LOGO-PSI.png" alt="logo" style="max-height: 40px;">
+                </a>
+                <button type="button" class="btn-close btn-close-custom" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
            <div class="offcanvas-body">
                <div class="accordion" id="navbarAccordion">
                    <!-- Beranda -->
@@ -208,14 +209,14 @@
        
                    <!-- Berita & Agenda -->
                    <div class="accordion-item">
-                       <a class="accordion-link without-icon" href="berita-agenda.html">
+                       <a class="accordion-link without-icon" href="berita_agenda.php">
                            Berita & Agenda
                        </a>
                    </div>
        
                    <!-- Tentang Unmer -->
                    <div class="accordion-item">
-                       <a class="accordion-link without-icon" href="tentang-unmer.html">
+                       <a class="accordion-link without-icon" href="https://unmer.ac.id/">
                            Tentang Unmer
                        </a>
                    </div>
