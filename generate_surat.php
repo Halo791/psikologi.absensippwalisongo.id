@@ -216,7 +216,7 @@ if ($currentY > 200) {
 
 $pdf->Cell(0,5,'a.n Dekan',0,1,'R');
 $pdf->Cell(0,5,'Wakil Dekan I Bidang Akademik dan Kemahasiswaan',0,1,'R');
-$pdf->Ln(13);
+$pdf->Ln(16);
 
 $pdf->SetFont('Arial','BU',11);
 $pdf->Cell(0,5,'Muhammad Untung Manara, S.Psi., MA, Ph.D',0,1,'R');
