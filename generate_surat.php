@@ -21,13 +21,18 @@ if (!class_exists('FPDF')) {
     die("FPDF tidak ditemukan! Cek path fpdf186/fpdf.php");
 }
 
+// Path logo (sesuaikan dengan struktur folder Anda)
+$logoPath = 'Template_file/canyon/assets/img/logo/logo-unmer.png'; // Ganti dengan nama file logo sebenarnya
+
+// Cek apakah logo ada
+$logoExists = file_exists($logoPath);
+
 // FUNGSI HITUNG SEMESTER BERDASARKAN NIM
 function hitungSemesterDariNIM($nim, $tahunAkademikAwal = 2025) {
     // Ambil 2 digit pertama NIM sebagai tahun masuk
     $tahunMasuk = substr($nim, 0, 2);
     
     // Konversi ke tahun lengkap (asumsi 20xx)
-    // Jika 2 digit < 50, anggap 2000-an, jika >= 50 anggap 1900-an
     if ($tahunMasuk < 50) {
         $tahunMasukLengkap = 2000 + $tahunMasuk;
     } else {
@@ -38,10 +43,9 @@ function hitungSemesterDariNIM($nim, $tahunAkademikAwal = 2025) {
     $selisihTahun = $tahunAkademikAwal - $tahunMasukLengkap;
     
     // Setiap tahun ada 2 semester (Ganjil dan Genap)
-    // Semester Ganjil 2025/2026 dianggap sebagai semester ganjil
     $semester = ($selisihTahun * 2) + 1; // +1 karena semester ganjil
     
-    // Pastikan semester minimal 1 dan maksimal 14 (7 tahun)
+    // Pastikan semester minimal 1 dan maksimal 14
     if ($semester < 1) {
         $semester = 1;
     } elseif ($semester > 14) {
@@ -62,20 +66,18 @@ function angkaKeRomawi($angka) {
         return $romawi[$angka - 1];
     }
     
-    return $angka; // Kembalikan angka jika di luar range
+    return $angka;
 }
 
 // Tentukan semester
 if (isset($data['semester']) && !empty($data['semester'])) {
-    // Jika sudah ada data semester di database, gunakan itu
     $semester = $data['semester'];
 } else {
-    // Jika tidak ada, hitung berdasarkan NIM
     if (isset($data['nim']) && strlen($data['nim']) >= 2) {
         $semesterAngka = hitungSemesterDariNIM($data['nim']);
         $semester = angkaKeRomawi($semesterAngka);
     } else {
-        $semester = 'IV'; // Default jika NIM tidak valid
+        $semester = 'IV';
     }
 }
 
@@ -84,16 +86,35 @@ $pdf->AddPage('P', 'A4');
 $pdf->SetMargins(20, 15, 20);
 $pdf->SetAutoPageBreak(true, 15);
 
-// Header Universitas
+// HEADER DENGAN LOGO
+$pdf->SetY(15); // Posisi Y untuk header
+
+// Logo di kiri (jika ada)
+if ($logoExists) {
+    $pdf->Image($logoPath, 20, 15, 25, 25); // x, y, width, height
+    $pdf->SetX(50); // Geser posisi X setelah logo
+} else {
+    $pdf->SetX(20); // Jika logo tidak ada, mulai dari margin kiri
+}
+
+// Teks header di samping logo
 $pdf->SetFont('Arial','B',14);
-$pdf->Cell(0,6,'UNIVERSITAS MERDEKA MALANG',0,1,'C');
+$pdf->Cell(0,6,'UNIVERSITAS MERDEKA MALANG',0,1,'L');
+
+$pdf->SetX($logoExists ? 50 : 20);
 $pdf->SetFont('Arial','B',12);
-$pdf->Cell(0,6,'FAKULTAS PSIKOLOGI',0,1,'C');
+$pdf->Cell(0,6,'FAKULTAS PSIKOLOGI',0,1,'L');
+
+$pdf->SetX($logoExists ? 50 : 20);
 $pdf->SetFont('Arial','I',10);
-$pdf->Cell(0,5,'Terakreditasi "B"',0,1,'C');
+$pdf->Cell(0,5,'Terakreditasi "B"',0,1,'L');
+
+$pdf->SetX($logoExists ? 50 : 20);
 $pdf->SetFont('Arial','',9);
-$pdf->Cell(0,5,'Kampus : Jl. Terusan Raya Dieng No. 62-64 Malang, Telp. (0341) 568395 Ext. 821',0,1,'C');
-$pdf->Cell(0,5,'Website : psikologi.unmer.ac.id -- Email: psikologi@unmer.ac.id',0,1,'C');
+$pdf->Cell(0,5,'Kampus : Jl. Terusan Raya Dieng No. 62-64 Malang, Telp. (0341) 568395 Ext. 821',0,1,'L');
+
+$pdf->SetX($logoExists ? 50 : 20);
+$pdf->Cell(0,5,'Website : psikologi.unmer.ac.id -- Email: psikologi@unmer.ac.id',0,1,'L');
 
 // Garis pemisah
 $pdf->Ln(5);
@@ -106,10 +127,12 @@ $pdf->SetFont('Arial','U',12);
 $pdf->Cell(0,6,'SURAT KETERANGAN AKTIF KULIAH',0,1,'C');
 $pdf->Ln(5);
 
-// Nomor Surat (bisa dibuat dinamis jika perlu)
-$nomorUrut = isset($data['id']) ? $data['id'] : '001';
+// Nomor Surat
+$nomorUrut = isset($data['id']) ? str_pad($data['id'], 3, '0', STR_PAD_LEFT) : '001';
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(0,5,'Nomor : Ket-'.$nomorUrut.'/F.Psi/UM/'.date('m').'/'.date('Y'),0,1,'C');
+$bulanRomawi = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII'];
+$bulanSekarang = $bulanRomawi[date('n') - 1];
+$pdf->Cell(0,5,'Nomor : Ket-'.$nomorUrut.'/F.Psi/UM/'.$bulanSekarang.'/'.date('Y'),0,1,'C');
 $pdf->Ln(5);
 
 // Yang Bertanda Tangan
@@ -152,7 +175,7 @@ $pdf->Ln(5);
 $pdf->Cell(0,6,'Menerangkan kepada',0,1);
 $pdf->Ln(2);
 
-// Data Mahasiswa dari Database
+// Data Mahasiswa
 $pdf->SetFont('Arial','',11);
 $pdf->Cell(40,6,'Nama Mahasiswa',0,0);
 $pdf->Cell(5,6,':',0,0);
@@ -164,7 +187,6 @@ $pdf->Cell(40,6,'NIM',0,0);
 $pdf->Cell(5,6,':',0,0);
 $pdf->Cell(0,6,$data['nim'],0,1);
 
-// Tampilkan semester (dalam angka Romawi)
 $pdf->SetFont('Arial','',11);
 $pdf->Cell(40,6,'Semester',0,0);
 $pdf->Cell(5,6,':',0,0);
@@ -185,8 +207,20 @@ $pdf->Ln(5);
 $pdf->MultiCell(0,6,'Demikian surat keterangan ini dibuat dengan sebenarnya dan untuk dipergunakan sebagai mana mestinya.');
 $pdf->Ln(10);
 
-// Tanda Tangan
+// TANDA TANGAN DAN LOGO TTD (jika ada logo tanda tangan)
+$ttdLogoPath = 'Template_file/canyon/assets/img/logo/ttd-manara.png'; // Ganti dengan path tanda tangan
+$ttdLogoExists = file_exists($ttdLogoPath);
+
 $pdf->Cell(0,6,'Malang, '.date('d F Y'),0,1,'R');
+
+// Logo tanda tangan di kanan
+if ($ttdLogoExists) {
+    $pdf->Image($ttdLogoPath, 150, $pdf->GetY(), 30, 20);
+    $pdf->Ln(25); // Beri jarak untuk logo tanda tangan
+} else {
+    $pdf->Ln(5);
+}
+
 $pdf->Cell(0,6,'a.n Dekan',0,1,'R');
 $pdf->Cell(0,6,'Wakil Dekan I',0,1,'R');
 $pdf->Cell(0,6,'Bidang Akademik dan Kemahasiswaan,',0,1,'R');
@@ -204,17 +238,8 @@ $pdf->Cell(0,6,'Tembusan : Yth.',0,1);
 $pdf->SetFont('Arial','',10);
 $pdf->Cell(0,6,'- Dekan Fakultas Psikologi Unmer Malang',0,1);
 
-// DEBUG INFO (opsional - bisa dihapus setelah testing)
-$pdf->SetFont('Arial','',8);
-$pdf->SetTextColor(150, 150, 150);
-$pdf->Ln(5);
-$pdf->Cell(0,5,'Info: Semester dihitung dari NIM '.$data['nim'].' untuk TA 2025/2026',0,1);
-if (!isset($data['semester']) || empty($data['semester'])) {
-    $pdf->Cell(0,5,'(Semester dihitung otomatis: '.$semester.')',0,1);
-}
-
 // Output
-$filename = 'Surat_Keterangan_Aktif_' . $data['nim'] . '.pdf';
+$filename = 'Surat_Keterangan_Aktif_' . $data['nim'] . '_' . date('Ymd') . '.pdf';
 $pdf->Output('D', $filename);
 exit;
 ?>
