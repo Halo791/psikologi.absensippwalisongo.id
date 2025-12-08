@@ -22,7 +22,7 @@ if (!class_exists('FPDF')) {
 }
 
 // Path logo (sesuaikan dengan struktur folder Anda)
-$logoPath = 'Template_file/canyon/assets/img/logo/logo-unmer.png'; // Ganti dengan nama file logo sebenarnya
+$logoPath = 'Template_file/canyon/assets/img/logo/logo.png'; // Ganti dengan nama file logo sebenarnya
 
 // Cek apakah logo ada
 $logoExists = file_exists($logoPath);
