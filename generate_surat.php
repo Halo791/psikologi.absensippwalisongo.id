@@ -197,7 +197,7 @@ $pdf->Cell(40,6,'Fakultas/Program Studi',0,0);
 $pdf->Cell(5,6,':',0,0);
 $pdf->Cell(0,6,'Psikologi - S1 Psikologi',0,1);
 
-$pdf->Ln(5);
+$pdf->Ln(3);
 
 // Isi Surat
 $pdf->SetFont('Arial','',11);
