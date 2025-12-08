@@ -215,8 +215,7 @@ if ($currentY > 200) {
 }
 
 $pdf->Cell(0,5,'a.n Dekan',0,1,'R');
-$pdf->Cell(0,5,'Wakil Dekan I',0,1,'R');
-$pdf->Cell(0,5,'Bidang Akademik dan Kemahasiswaan,',0,1,'R');
+$pdf->Cell(0,5,'Wakil Dekan I Bidang Akademik dan Kemahasiswaan',0,1,'R');
 $pdf->Ln(10);
 
 $pdf->SetFont('Arial','BU',11);
