@@ -21,31 +21,23 @@ if (!class_exists('FPDF')) {
     die("FPDF tidak ditemukan! Cek path fpdf186/fpdf.php");
 }
 
-// Path logo (sesuaikan dengan struktur folder Anda)
-$logoPath = 'Template_file/canyon/assets/img/logo/logo.png'; // Ganti dengan nama file logo sebenarnya
-
-// Cek apakah logo ada
+// Path logo
+$logoPath = 'Template_file/canyon/assets/img/logo/logo.png';
 $logoExists = file_exists($logoPath);
 
 // FUNGSI HITUNG SEMESTER BERDASARKAN NIM
 function hitungSemesterDariNIM($nim, $tahunAkademikAwal = 2025) {
-    // Ambil 2 digit pertama NIM sebagai tahun masuk
     $tahunMasuk = substr($nim, 0, 2);
     
-    // Konversi ke tahun lengkap (asumsi 20xx)
     if ($tahunMasuk < 50) {
         $tahunMasukLengkap = 2000 + $tahunMasuk;
     } else {
         $tahunMasukLengkap = 1900 + $tahunMasuk;
     }
     
-    // Hitung selisih tahun
     $selisihTahun = $tahunAkademikAwal - $tahunMasukLengkap;
+    $semester = ($selisihTahun * 2) + 1;
     
-    // Setiap tahun ada 2 semester (Ganjil dan Genap)
-    $semester = ($selisihTahun * 2) + 1; // +1 karena semester ganjil
-    
-    // Pastikan semester minimal 1 dan maksimal 14
     if ($semester < 1) {
         $semester = 1;
     } elseif ($semester > 14) {
@@ -87,17 +79,17 @@ $pdf->SetMargins(20, 15, 20);
 $pdf->SetAutoPageBreak(true, 15);
 
 // HEADER DENGAN LOGO
-$pdf->SetY(15); // Posisi Y untuk header
+$pdf->SetY(15);
 
-// Logo di kiri (jika ada)
+// Logo di kiri
 if ($logoExists) {
-    $pdf->Image($logoPath, 20, 15, 25, 25); // x, y, width, height
-    $pdf->SetX(50); // Geser posisi X setelah logo
+    $pdf->Image($logoPath, 20, 15, 25, 25);
+    $pdf->SetX(50);
 } else {
-    $pdf->SetX(20); // Jika logo tidak ada, mulai dari margin kiri
+    $pdf->SetX(20);
 }
 
-// Teks header di samping logo
+// Teks header
 $pdf->SetFont('Arial','B',14);
 $pdf->Cell(0,6,'UNIVERSITAS MERDEKA MALANG',0,1,'L');
 
@@ -133,110 +125,127 @@ $pdf->SetFont('Arial','',10);
 $bulanRomawi = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII'];
 $bulanSekarang = $bulanRomawi[date('n') - 1];
 $pdf->Cell(0,5,'Nomor : Ket-'.$nomorUrut.'/F.Psi/UM/'.$bulanSekarang.'/'.date('Y'),0,1,'C');
-$pdf->Ln(5);
+$pdf->Ln(3); // Kurangi spasi
 
-// Yang Bertanda Tangan
+// Yang Bertanda Tangan (rapatkan)
 $pdf->SetFont('Arial','',11);
-$pdf->Cell(0,6,'Yang bertanda tangan di bawah ini :',0,1);
-$pdf->Ln(2);
+$pdf->Cell(0,5,'Yang bertanda tangan di bawah ini :',0,1);
+$pdf->Ln(1);
 
 $pdf->SetFont('Arial','',11);
-$pdf->Cell(40,6,'Nama',0,0);
-$pdf->Cell(5,6,':',0,0);
+$pdf->Cell(40,5,'Nama',0,0);
+$pdf->Cell(5,5,':',0,0);
 $pdf->SetFont('Arial','B',11);
-$pdf->Cell(0,6,'Muhammad Untung Manara, S.Psi., MA., Ph.D',0,1);
+$pdf->Cell(0,5,'Muhammad Untung Manara, S.Psi., MA., Ph.D',0,1);
 
 $pdf->SetFont('Arial','',11);
-$pdf->Cell(40,6,'NIP',0,0);
-$pdf->Cell(5,6,':',0,0);
-$pdf->Cell(0,6,'860/F.Psi',0,1);
+$pdf->Cell(40,5,'NIP',0,0);
+$pdf->Cell(5,5,':',0,0);
+$pdf->Cell(0,5,'860/F.Psi',0,1);
 
 $pdf->SetFont('Arial','',11);
-$pdf->Cell(40,6,'Pangkat / Golongan',0,0);
-$pdf->Cell(5,6,':',0,0);
-$pdf->Cell(0,6,'Penata/III-C',0,1);
+$pdf->Cell(40,5,'Pangkat / Golongan',0,0);
+$pdf->Cell(5,5,':',0,0);
+$pdf->Cell(0,5,'Penata/III-C',0,1);
 
 $pdf->SetFont('Arial','',11);
-$pdf->Cell(40,6,'Jabatan',0,0);
-$pdf->Cell(5,6,':',0,0);
-$pdf->Cell(0,6,'Wakil Dekan Bidang Akademik & Kemahasiswaan',0,1);
+$pdf->Cell(40,5,'Jabatan',0,0);
+$pdf->Cell(5,5,':',0,0);
+$pdf->Cell(0,5,'Wakil Dekan Bidang Akademik & Kemahasiswaan',0,1);
 
 $pdf->SetFont('Arial','',11);
-$pdf->Cell(40,6,'Fakultas/Program Studi',0,0);
-$pdf->Cell(5,6,':',0,0);
-$pdf->Cell(0,6,'Psikologi - S1 Psikologi',0,1);
+$pdf->Cell(40,5,'Fakultas/Program Studi',0,0);
+$pdf->Cell(5,5,':',0,0);
+$pdf->Cell(0,5,'Psikologi - S1 Psikologi',0,1);
 
 $pdf->SetFont('Arial','',11);
-$pdf->Cell(40,6,'Instansi',0,0);
-$pdf->Cell(5,6,':',0,0);
-$pdf->Cell(0,6,'Universitas Merdeka Malang',0,1);
+$pdf->Cell(40,5,'Instansi',0,0);
+$pdf->Cell(5,5,':',0,0);
+$pdf->Cell(0,5,'Universitas Merdeka Malang',0,1);
 
-$pdf->Ln(5);
-$pdf->Cell(0,6,'Menerangkan kepada',0,1);
-$pdf->Ln(2);
+$pdf->Ln(3); // Kurangi spasi
+$pdf->Cell(0,5,'Menerangkan kepada',0,1);
+$pdf->Ln(1);
 
 // Data Mahasiswa
 $pdf->SetFont('Arial','',11);
-$pdf->Cell(40,6,'Nama Mahasiswa',0,0);
-$pdf->Cell(5,6,':',0,0);
+$pdf->Cell(40,5,'Nama Mahasiswa',0,0);
+$pdf->Cell(5,5,':',0,0);
 $pdf->SetFont('Arial','B',11);
-$pdf->Cell(0,6,strtoupper($data['nama']),0,1);
+$pdf->Cell(0,5,strtoupper($data['nama']),0,1);
 
 $pdf->SetFont('Arial','',11);
-$pdf->Cell(40,6,'NIM',0,0);
-$pdf->Cell(5,6,':',0,0);
-$pdf->Cell(0,6,$data['nim'],0,1);
+$pdf->Cell(40,5,'NIM',0,0);
+$pdf->Cell(5,5,':',0,0);
+$pdf->Cell(0,5,$data['nim'],0,1);
 
 $pdf->SetFont('Arial','',11);
-$pdf->Cell(40,6,'Semester',0,0);
-$pdf->Cell(5,6,':',0,0);
-$pdf->Cell(0,6,$semester,0,1);
+$pdf->Cell(40,5,'Semester',0,0);
+$pdf->Cell(5,5,':',0,0);
+$pdf->Cell(0,5,$semester,0,1);
 
 $pdf->SetFont('Arial','',11);
-$pdf->Cell(40,6,'Fakultas/Program Studi',0,0);
-$pdf->Cell(5,6,':',0,0);
-$pdf->Cell(0,6,'Psikologi - S1 Psikologi',0,1);
+$pdf->Cell(40,5,'Fakultas/Program Studi',0,0);
+$pdf->Cell(5,5,':',0,0);
+$pdf->Cell(0,5,'Psikologi - S1 Psikologi',0,1);
 
-$pdf->Ln(3);
+$pdf->Ln(3); // Kurangi spasi
 
 // Isi Surat
 $pdf->SetFont('Arial','',11);
 $isiSurat = 'Dengan ini kami menyatakan bahwa nama mahasiswa di atas benar tercatat sebagai mahasiswa aktif pada Program Studi Psikologi Fakultas Psikologi Universitas Merdeka Malang Semester Ganjil Tahun Akademik 2025/2026.';
-$pdf->MultiCell(0,6,$isiSurat);
+$pdf->MultiCell(0,5,$isiSurat);
+$pdf->Ln(3);
+$pdf->MultiCell(0,5,'Demikian surat keterangan ini dibuat dengan sebenarnya dan untuk dipergunakan sebagai mana mestinya.');
 $pdf->Ln(5);
-$pdf->MultiCell(0,6,'Demikian surat keterangan ini dibuat dengan sebenarnya dan untuk dipergunakan sebagai mana mestinya.');
-$pdf->Ln(10);
 
-// TANDA TANGAN DAN LOGO TTD (jika ada logo tanda tangan)
-$ttdLogoPath = 'Template_file/canyon/assets/img/logo/ttd-manara.png'; // Ganti dengan path tanda tangan
-$ttdLogoExists = file_exists($ttdLogoPath);
+// TANDA TANGAN - Pindah ke posisi yang lebih tinggi
+$pdf->Cell(0,5,'Malang, '.date('d F Y'),0,1,'R');
 
-$pdf->Cell(0,6,'Malang, '.date('d F Y'),0,1,'R');
+// Cek apakah perlu pindah halaman untuk tembusan
+$currentY = $pdf->GetY();
+$pageHeight = 297; // Tinggi A4 dalam mm
+$bottomMargin = 20;
 
-// Logo tanda tangan di kanan
-if ($ttdLogoExists) {
-    $pdf->Image($ttdLogoPath, 150, $pdf->GetY(), 30, 20);
-    $pdf->Ln(25); // Beri jarak untuk logo tanda tangan
+// Jika posisi Y sudah terlalu rendah, kurangi spacing
+if ($currentY > 200) {
+    $pdf->Ln(2); // Spasi minimal
 } else {
-    $pdf->Ln(5);
+    $pdf->Ln(5); // Spasi normal
 }
 
-$pdf->Cell(0,6,'a.n Dekan',0,1,'R');
-$pdf->Cell(0,6,'Wakil Dekan I',0,1,'R');
-$pdf->Cell(0,6,'Bidang Akademik dan Kemahasiswaan,',0,1,'R');
-$pdf->Ln(15);
-
-$pdf->SetFont('Arial','BU',11);
-$pdf->Cell(0,6,'Muhammad Untung Manara, S.Psi., MA, Ph.D',0,1,'R');
-$pdf->SetFont('Arial','',10);
-$pdf->Cell(0,6,'NIDN : 0705128406',0,1,'R');
+$pdf->Cell(0,5,'a.n Dekan',0,1,'R');
+$pdf->Cell(0,5,'Wakil Dekan I',0,1,'R');
+$pdf->Cell(0,5,'Bidang Akademik dan Kemahasiswaan,',0,1,'R');
 $pdf->Ln(10);
 
-// Tembusan
-$pdf->SetFont('Arial','B',10);
-$pdf->Cell(0,6,'Tembusan : Yth.',0,1);
+$pdf->SetFont('Arial','BU',11);
+$pdf->Cell(0,5,'Muhammad Untung Manara, S.Psi., MA, Ph.D',0,1,'R');
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(0,6,'- Dekan Fakultas Psikologi Unmer Malang',0,1);
+$pdf->Cell(0,5,'NIDN : 0705128406',0,1,'R');
+$pdf->Ln(5);
+
+// TEMBUSAN - ditempatkan di kiri bawah dalam 1 halaman
+$currentY = $pdf->GetY();
+
+// Jika posisi Y masih cukup untuk tembusan
+if ($currentY < 250) {
+    // Tembusan di kiri
+    $pdf->SetFont('Arial','B',10);
+    $pdf->Cell(0,5,'Tembusan : Yth.',0,1);
+    $pdf->SetFont('Arial','',10);
+    $pdf->Cell(0,5,'1. Dekan Fakultas Psikologi Unmer Malang',0,1);
+    $pdf->Cell(0,5,'2. Arsip Fakultas',0,1);
+} else {
+    // Jika posisi terlalu rendah, buat halaman baru
+    $pdf->AddPage();
+    $pdf->SetY(20);
+    $pdf->SetFont('Arial','B',10);
+    $pdf->Cell(0,5,'Tembusan : Yth.',0,1);
+    $pdf->SetFont('Arial','',10);
+    $pdf->Cell(0,5,'1. Dekan Fakultas Psikologi Unmer Malang',0,1);
+    $pdf->Cell(0,5,'2. Arsip Fakultas',0,1);
+}
 
 // Output
 $filename = 'Surat_Keterangan_Aktif_' . $data['nim'] . '_' . date('Ymd') . '.pdf';
