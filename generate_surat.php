@@ -158,7 +158,7 @@ $pdf->Cell(5,5,':',0,0);
 $pdf->Cell(0,5,'Wakil Dekan Bidang Akademik & Kemahasiswaan',0,1);
 
 $pdf->SetFont('Arial','',11);
-$pdf->Cell(40,5,'Fakultas/Program Studi',0,0);
+$pdf->Cell(40,5,'Fakultas/Prodi',0,0);
 $pdf->Cell(5,5,':',0,0);
 $pdf->Cell(0,5,'Psikologi - S1 Psikologi',0,1);
 
@@ -189,7 +189,7 @@ $pdf->Cell(5,5,':',0,0);
 $pdf->Cell(0,5,$semester,0,1);
 
 $pdf->SetFont('Arial','',11);
-$pdf->Cell(40,5,'Fakultas/Program Studi',0,0);
+$pdf->Cell(40,5,'Fakultas/Prodi',0,0);
 $pdf->Cell(5,5,':',0,0);
 $pdf->Cell(0,5,'Psikologi - S1 Psikologi',0,1);
 
