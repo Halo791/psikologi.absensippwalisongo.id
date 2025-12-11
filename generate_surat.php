@@ -21,9 +21,13 @@ if (!class_exists('FPDF')) {
     die("FPDF tidak ditemukan! Cek path fpdf186/fpdf.php");
 }
 
-// Path logo
+// Path logo universitas
 $logoPath = 'Template_file/canyon/assets/img/logo/logo.png';
 $logoExists = file_exists($logoPath);
+
+// Path tanda tangan digital
+$ttdPath = 'Template_file/canyon/assets/img/ttd/ttd_manara.png'; // Ganti dengan path tanda tangan yang sesuai
+$ttdExists = file_exists($ttdPath);
 
 // FUNGSI HITUNG SEMESTER BERDASARKAN NIM
 function hitungSemesterDariNIM($nim, $tahunAkademikAwal = 2025) {
@@ -124,7 +128,7 @@ $nomorUrut = isset($data['id']) ? str_pad($data['id'], 3, '0', STR_PAD_LEFT) : '
 $pdf->SetFont('Arial','',10);
 $bulanRomawi = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII'];
 $bulanSekarang = $bulanRomawi[date('n') - 1];
-$pdf->Cell(0,5,'Nomor : Ket-'.$nomorUrut.'/F.Psi/UM/'.$bulanSekarang.'/'.date('Y'),0,1,'C');
+$pdf->Cell(0,5,'Nomor : Ket-__________/F.Psi/UM/'.$bulanSekarang.'/'.date('Y'),0,1,'C');
 $pdf->Ln(3); // Kurangi spasi
 
 // Yang Bertanda Tangan (rapatkan)
@@ -199,25 +203,35 @@ $pdf->Ln(3);
 $pdf->MultiCell(0,5,'Demikian surat keterangan ini dibuat dengan sebenarnya dan untuk dipergunakan sebagai mana mestinya.');
 $pdf->Ln(5);
 
-// TANDA TANGAN - Pindah ke posisi yang lebih tinggi
+// TANDA TANGAN - Bagian ini akan menampilkan gambar tanda tangan
 $pdf->Cell(0,5,'Malang, '.date('d F Y'),0,1,'R');
-
-// Cek apakah perlu pindah halaman untuk tembusan
-$currentY = $pdf->GetY();
-$pageHeight = 297; // Tinggi A4 dalam mm
-$bottomMargin = 20;
-
-// Jika posisi Y sudah terlalu rendah, kurangi spacing
-if ($currentY > 200) {
-    $pdf->Ln(2); // Spasi minimal
-} else {
-    $pdf->Ln(5); // Spasi normal
-}
+$pdf->Ln(3); // Spasi minimal
 
 $pdf->Cell(0,5,'a.n Dekan',0,1,'R');
 $pdf->Cell(0,5,'Wakil Dekan I Bidang Akademik dan Kemahasiswaan',0,1,'R');
-$pdf->Ln(16);
+$pdf->Ln(12); // Spasi untuk tanda tangan
 
+// Tanda Tangan sebagai Gambar
+if ($ttdExists) {
+    // Hitung posisi X untuk tanda tangan (rata kanan dengan margin)
+    $ttdWidth = 40; // Lebar tanda tangan
+    $ttdHeight = 20; // Tinggi tanda tangan
+    $xPosition = 190 - $ttdWidth - 20; // 190 adalah lebar A4, 20 adalah margin kanan
+    
+    // Tampilkan gambar tanda tangan
+    $pdf->Image($ttdPath, $xPosition, $pdf->GetY(), $ttdWidth, $ttdHeight);
+    
+    // Geser posisi Y untuk nama di bawah tanda tangan
+    $pdf->SetY($pdf->GetY() + $ttdHeight + 5);
+} else {
+    // Jika tanda tangan gambar tidak ada, gunakan garis dan teks biasa
+    $pdf->Ln(15); // Spasi untuk garis tanda tangan
+    $pdf->SetLineWidth(0.5);
+    $pdf->Line(140, $pdf->GetY(), 180, $pdf->GetY());
+    $pdf->Ln(5);
+}
+
+// Nama dan NIDN di bawah tanda tangan
 $pdf->SetFont('Arial','BU',11);
 $pdf->Cell(0,5,'Muhammad Untung Manara, S.Psi., MA, Ph.D',0,1,'R');
 $pdf->SetFont('Arial','',10);
