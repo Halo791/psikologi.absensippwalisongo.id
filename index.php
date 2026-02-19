@@ -140,7 +140,7 @@
                 <div class="container">
                     <div class="banner-content-2">
                         <div class="content">
-                            <span data-aos="fade-zoom-in" data-aos-delay="300">Universitas Merdeka Malang</span>
+                            <span data-aos="fade-zoom-in" data-aos-delay="300">Universit Merdeka Malang</span>
                             <h1 data-aos="fade-up" data-aos-delay="200">Fakultas Psikologi </h1>
                             <p data-aos="fade-up" data-aos-delay="300">Membangun generasi psikolog yang kompeten, berintegritas, dan berdaya saing global melalui pendidikan berkualitas dan penelitian inovatif.</p>
                             <div class="buttons-action" data-aos="fade-up" data-aos-delay="100">
