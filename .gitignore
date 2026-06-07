@@ -1,0 +1,17 @@
+# Database configuration
+koneksi.php
+
+# Server config
+.htaccess
+
+# Sensitive directories
+private/
+secret/
+credentials/
+
+# Runtime data
+*.log
+/tmp/
+/cache/
+.htaccess
+koneksi.php

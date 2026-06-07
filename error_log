@@ -436,3 +436,437 @@ Stack trace:
 [31-Jul-2025 20:12:15 Asia/Jakarta] PHP Parse error:  syntax error, unexpected identifier "Hapus", expecting "," or ";" in /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php on line 52
 [31-Jul-2025 20:45:31 Asia/Jakarta] PHP Warning:  Undefined variable $categories in /home/abss9145/public_html/psikologi.absensippwalisongo.id/form_event.php on line 30
 [31-Jul-2025 20:45:31 Asia/Jakarta] PHP Warning:  foreach() argument must be of type array|object, null given in /home/abss9145/public_html/psikologi.absensippwalisongo.id/form_event.php on line 30
+[20-Sep-2025 14:52:15 Asia/Jakarta] PHP Warning:  Undefined variable $koneksi in /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php on line 103
+[20-Sep-2025 14:52:15 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php:103
+Stack trace:
+#0 /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php(103): mysqli_query(NULL, 'SELECT * FROM p...')
+#1 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php on line 103
+[20-Sep-2025 14:54:00 Asia/Jakarta] PHP Warning:  Undefined variable $koneksi in /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php on line 108
+[20-Sep-2025 14:54:00 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php:108
+Stack trace:
+#0 /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php(108): mysqli_query(NULL, 'SELECT * FROM p...')
+#1 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php on line 108
+[20-Sep-2025 14:54:34 Asia/Jakarta] PHP Warning:  Undefined variable $koneksi in /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php on line 108
+[20-Sep-2025 14:54:34 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php:108
+Stack trace:
+#0 /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php(108): mysqli_query(NULL, 'SELECT * FROM p...')
+#1 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php on line 108
+[20-Sep-2025 14:54:51 Asia/Jakarta] PHP Warning:  Undefined variable $koneksi in /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php on line 108
+[20-Sep-2025 14:54:51 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php:108
+Stack trace:
+#0 /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php(108): mysqli_query(NULL, 'SELECT * FROM p...')
+#1 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php on line 108
+[20-Sep-2025 14:55:30 Asia/Jakarta] PHP Warning:  Undefined variable $koneksi in /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php on line 108
+[20-Sep-2025 14:55:30 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php:108
+Stack trace:
+#0 /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php(108): mysqli_query(NULL, 'SELECT * FROM p...')
+#1 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php on line 108
+[20-Sep-2025 14:55:40 Asia/Jakarta] PHP Warning:  Undefined variable $koneksi in /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php on line 108
+[20-Sep-2025 14:55:40 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php:108
+Stack trace:
+#0 /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php(108): mysqli_query(NULL, 'SELECT * FROM p...')
+#1 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php on line 108
+[20-Sep-2025 14:56:25 Asia/Jakarta] PHP Warning:  Undefined variable $koneksi in /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php on line 108
+[20-Sep-2025 14:56:25 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php:108
+Stack trace:
+#0 /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php(108): mysqli_query(NULL, 'SELECT * FROM p...')
+#1 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php on line 108
+[20-Sep-2025 14:56:59 Asia/Jakarta] PHP Warning:  Undefined variable $koneksi in /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php on line 8
+[20-Sep-2025 14:56:59 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: mysqli_real_escape_string(): Argument #1 ($mysql) must be of type mysqli, null given in /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php:8
+Stack trace:
+#0 /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php(8): mysqli_real_escape_string(NULL, '19161176B')
+#1 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php on line 8
+[20-Sep-2025 14:57:09 Asia/Jakarta] PHP Warning:  Undefined variable $koneksi in /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php on line 8
+[20-Sep-2025 14:57:09 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: mysqli_real_escape_string(): Argument #1 ($mysql) must be of type mysqli, null given in /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php:8
+Stack trace:
+#0 /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php(8): mysqli_real_escape_string(NULL, '19161176B')
+#1 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php on line 8
+[20-Sep-2025 14:57:15 Asia/Jakarta] PHP Warning:  Undefined variable $koneksi in /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php on line 8
+[20-Sep-2025 14:57:15 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: mysqli_real_escape_string(): Argument #1 ($mysql) must be of type mysqli, null given in /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php:8
+Stack trace:
+#0 /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php(8): mysqli_real_escape_string(NULL, '19161176B')
+#1 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php on line 8
+[20-Sep-2025 14:57:17 Asia/Jakarta] PHP Warning:  Undefined variable $koneksi in /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php on line 108
+[20-Sep-2025 14:57:17 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php:108
+Stack trace:
+#0 /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php(108): mysqli_query(NULL, 'SELECT * FROM p...')
+#1 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php on line 108
+[20-Sep-2025 14:57:19 Asia/Jakarta] PHP Warning:  Undefined variable $koneksi in /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php on line 8
+[20-Sep-2025 14:57:19 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: mysqli_real_escape_string(): Argument #1 ($mysql) must be of type mysqli, null given in /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php:8
+Stack trace:
+#0 /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php(8): mysqli_real_escape_string(NULL, '19161176B')
+#1 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php on line 8
+[20-Sep-2025 14:59:26 Asia/Jakarta] PHP Warning:  Undefined variable $koneksi in /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php on line 113
+[20-Sep-2025 14:59:26 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php:113
+Stack trace:
+#0 /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php(113): mysqli_query(NULL, 'SELECT * FROM p...')
+#1 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/surat_mahasiswa.php on line 113
+[20-Sep-2025 18:04:51 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'role' in 'SELECT' in /home/abss9145/public_html/psikologi.absensippwalisongo.id/login.php:10
+Stack trace:
+#0 /home/abss9145/public_html/psikologi.absensippwalisongo.id/login.php(10): mysqli->prepare('SELECT id, user...')
+#1 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/login.php on line 10
+[20-Sep-2025 18:05:02 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'role' in 'SELECT' in /home/abss9145/public_html/psikologi.absensippwalisongo.id/login.php:10
+Stack trace:
+#0 /home/abss9145/public_html/psikologi.absensippwalisongo.id/login.php(10): mysqli->prepare('SELECT id, user...')
+#1 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/login.php on line 10
+[20-Sep-2025 18:08:18 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'role' in 'SELECT' in /home/abss9145/public_html/psikologi.absensippwalisongo.id/login.php:14
+Stack trace:
+#0 /home/abss9145/public_html/psikologi.absensippwalisongo.id/login.php(14): mysqli->prepare('SELECT id, user...')
+#1 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/login.php on line 14
+[20-Sep-2025 18:23:29 Asia/Jakarta] PHP Warning:  include(../koneksi.php): Failed to open stream: No such file or directory in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 2
+[20-Sep-2025 18:23:29 Asia/Jakarta] PHP Warning:  include(): Failed opening '../koneksi.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 2
+[20-Sep-2025 18:23:29 Asia/Jakarta] PHP Warning:  Undefined variable $conn in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 52
+[20-Sep-2025 18:23:29 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php:52
+Stack trace:
+#0 /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php(52): mysqli_query(NULL, 'SELECT * FROM p...')
+#1 /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php(81): include('/home/abss9145/...')
+#2 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 52
+[20-Sep-2025 18:23:41 Asia/Jakarta] PHP Warning:  include(../koneksi.php): Failed to open stream: No such file or directory in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 2
+[20-Sep-2025 18:23:41 Asia/Jakarta] PHP Warning:  include(): Failed opening '../koneksi.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 2
+[20-Sep-2025 18:23:41 Asia/Jakarta] PHP Warning:  Undefined variable $conn in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 13
+[20-Sep-2025 18:23:41 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php:13
+Stack trace:
+#0 /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php(13): mysqli_query(NULL, 'INSERT INTO pen...')
+#1 /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php(81): include('/home/abss9145/...')
+#2 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 13
+[20-Sep-2025 18:23:44 Asia/Jakarta] PHP Warning:  include(../koneksi.php): Failed to open stream: No such file or directory in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 2
+[20-Sep-2025 18:23:44 Asia/Jakarta] PHP Warning:  include(): Failed opening '../koneksi.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 2
+[20-Sep-2025 18:23:44 Asia/Jakarta] PHP Warning:  Undefined variable $conn in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 52
+[20-Sep-2025 18:23:44 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php:52
+Stack trace:
+#0 /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php(52): mysqli_query(NULL, 'SELECT * FROM p...')
+#1 /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php(81): include('/home/abss9145/...')
+#2 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 52
+[20-Sep-2025 18:23:48 Asia/Jakarta] PHP Warning:  include(../koneksi.php): Failed to open stream: No such file or directory in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 2
+[20-Sep-2025 18:23:48 Asia/Jakarta] PHP Warning:  include(): Failed opening '../koneksi.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 2
+[20-Sep-2025 18:23:48 Asia/Jakarta] PHP Warning:  Undefined variable $conn in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 53
+[20-Sep-2025 18:23:48 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php:53
+Stack trace:
+#0 /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php(53): mysqli_query(NULL, 'SELECT * FROM e...')
+#1 /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php(84): include('/home/abss9145/...')
+#2 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 53
+[20-Sep-2025 18:23:50 Asia/Jakarta] PHP Warning:  include(pages/users.php): Failed to open stream: No such file or directory in /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php on line 87
+[20-Sep-2025 18:23:50 Asia/Jakarta] PHP Warning:  include(): Failed opening 'pages/users.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php on line 87
+[20-Sep-2025 18:23:53 Asia/Jakarta] PHP Warning:  include(../koneksi.php): Failed to open stream: No such file or directory in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 2
+[20-Sep-2025 18:23:53 Asia/Jakarta] PHP Warning:  include(): Failed opening '../koneksi.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 2
+[20-Sep-2025 18:23:53 Asia/Jakarta] PHP Warning:  Undefined variable $conn in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 53
+[20-Sep-2025 18:23:53 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php:53
+Stack trace:
+#0 /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php(53): mysqli_query(NULL, 'SELECT * FROM e...')
+#1 /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php(84): include('/home/abss9145/...')
+#2 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 53
+[20-Sep-2025 18:23:55 Asia/Jakarta] PHP Warning:  include(../koneksi.php): Failed to open stream: No such file or directory in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 2
+[20-Sep-2025 18:23:55 Asia/Jakarta] PHP Warning:  include(): Failed opening '../koneksi.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 2
+[20-Sep-2025 18:23:55 Asia/Jakarta] PHP Warning:  Undefined variable $conn in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 52
+[20-Sep-2025 18:23:55 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php:52
+Stack trace:
+#0 /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php(52): mysqli_query(NULL, 'SELECT * FROM p...')
+#1 /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php(81): include('/home/abss9145/...')
+#2 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 52
+[20-Sep-2025 18:24:48 Asia/Jakarta] PHP Warning:  include(pages/users.php): Failed to open stream: No such file or directory in /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php on line 87
+[20-Sep-2025 18:24:48 Asia/Jakarta] PHP Warning:  include(): Failed opening 'pages/users.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php on line 87
+[20-Sep-2025 18:24:50 Asia/Jakarta] PHP Warning:  include(../koneksi.php): Failed to open stream: No such file or directory in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 2
+[20-Sep-2025 18:24:50 Asia/Jakarta] PHP Warning:  include(): Failed opening '../koneksi.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 2
+[20-Sep-2025 18:24:50 Asia/Jakarta] PHP Warning:  Undefined variable $conn in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 53
+[20-Sep-2025 18:24:50 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php:53
+Stack trace:
+#0 /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php(53): mysqli_query(NULL, 'SELECT * FROM e...')
+#1 /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php(84): include('/home/abss9145/...')
+#2 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 53
+[20-Sep-2025 18:25:25 Asia/Jakarta] PHP Warning:  include(../koneksi.php): Failed to open stream: No such file or directory in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 2
+[20-Sep-2025 18:25:25 Asia/Jakarta] PHP Warning:  include(): Failed opening '../koneksi.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 2
+[20-Sep-2025 18:25:25 Asia/Jakarta] PHP Warning:  Undefined variable $conn in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 52
+[20-Sep-2025 18:25:25 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php:52
+Stack trace:
+#0 /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php(52): mysqli_query(NULL, 'SELECT * FROM p...')
+#1 /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php(81): include('/home/abss9145/...')
+#2 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 52
+[20-Sep-2025 18:25:26 Asia/Jakarta] PHP Warning:  include(../koneksi.php): Failed to open stream: No such file or directory in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 2
+[20-Sep-2025 18:25:26 Asia/Jakarta] PHP Warning:  include(): Failed opening '../koneksi.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 2
+[20-Sep-2025 18:25:26 Asia/Jakarta] PHP Warning:  Undefined variable $conn in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 53
+[20-Sep-2025 18:25:26 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php:53
+Stack trace:
+#0 /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php(53): mysqli_query(NULL, 'SELECT * FROM e...')
+#1 /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php(84): include('/home/abss9145/...')
+#2 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 53
+[20-Sep-2025 18:28:45 Asia/Jakarta] PHP Warning:  include(../koneksi.php): Failed to open stream: No such file or directory in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 2
+[20-Sep-2025 18:28:45 Asia/Jakarta] PHP Warning:  include(): Failed opening '../koneksi.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 2
+[20-Sep-2025 18:28:45 Asia/Jakarta] PHP Warning:  Undefined variable $conn in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 61
+[20-Sep-2025 18:28:45 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php:61
+Stack trace:
+#0 /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php(61): mysqli_query(NULL, 'SELECT * FROM e...')
+#1 /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php(84): include('/home/abss9145/...')
+#2 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 61
+[20-Sep-2025 18:28:47 Asia/Jakarta] PHP Warning:  include(../koneksi.php): Failed to open stream: No such file or directory in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 2
+[20-Sep-2025 18:28:47 Asia/Jakarta] PHP Warning:  include(): Failed opening '../koneksi.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 2
+[20-Sep-2025 18:28:47 Asia/Jakarta] PHP Warning:  Undefined variable $conn in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 61
+[20-Sep-2025 18:28:47 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php:61
+Stack trace:
+#0 /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php(61): mysqli_query(NULL, 'SELECT * FROM e...')
+#1 /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php(84): include('/home/abss9145/...')
+#2 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 61
+[20-Sep-2025 18:28:50 Asia/Jakarta] PHP Warning:  include(../koneksi.php): Failed to open stream: No such file or directory in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 2
+[20-Sep-2025 18:28:50 Asia/Jakarta] PHP Warning:  include(): Failed opening '../koneksi.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 2
+[20-Sep-2025 18:28:50 Asia/Jakarta] PHP Warning:  Undefined variable $conn in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 56
+[20-Sep-2025 18:28:50 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php:56
+Stack trace:
+#0 /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php(56): mysqli_query(NULL, 'SELECT * FROM p...')
+#1 /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php(81): include('/home/abss9145/...')
+#2 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 56
+[20-Sep-2025 18:28:59 Asia/Jakarta] PHP Warning:  include(../koneksi.php): Failed to open stream: No such file or directory in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 2
+[20-Sep-2025 18:28:59 Asia/Jakarta] PHP Warning:  include(): Failed opening '../koneksi.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 2
+[20-Sep-2025 18:28:59 Asia/Jakarta] PHP Warning:  Undefined variable $conn in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 6
+[20-Sep-2025 18:28:59 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: mysqli_real_escape_string(): Argument #1 ($mysql) must be of type mysqli, null given in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php:6
+Stack trace:
+#0 /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php(6): mysqli_real_escape_string(NULL, 'divira salsabii...')
+#1 /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php(81): include('/home/abss9145/...')
+#2 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 6
+[20-Sep-2025 18:31:08 Asia/Jakarta] PHP Warning:  include(../koneksi.php): Failed to open stream: No such file or directory in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 2
+[20-Sep-2025 18:31:08 Asia/Jakarta] PHP Warning:  include(): Failed opening '../koneksi.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 2
+[20-Sep-2025 18:31:08 Asia/Jakarta] PHP Warning:  Undefined variable $conn in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 6
+[20-Sep-2025 18:31:08 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: mysqli_real_escape_string(): Argument #1 ($mysql) must be of type mysqli, null given in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php:6
+Stack trace:
+#0 /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php(6): mysqli_real_escape_string(NULL, 'divira salsabii...')
+#1 /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php(81): include('/home/abss9145/...')
+#2 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 6
+[20-Sep-2025 18:31:09 Asia/Jakarta] PHP Warning:  include(../koneksi.php): Failed to open stream: No such file or directory in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 2
+[20-Sep-2025 18:31:09 Asia/Jakarta] PHP Warning:  include(): Failed opening '../koneksi.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 2
+[20-Sep-2025 18:31:09 Asia/Jakarta] PHP Warning:  Undefined variable $conn in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 56
+[20-Sep-2025 18:31:09 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php:56
+Stack trace:
+#0 /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php(56): mysqli_query(NULL, 'SELECT * FROM p...')
+#1 /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php(81): include('/home/abss9145/...')
+#2 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 56
+[20-Sep-2025 18:31:11 Asia/Jakarta] PHP Warning:  include(../koneksi.php): Failed to open stream: No such file or directory in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 2
+[20-Sep-2025 18:31:11 Asia/Jakarta] PHP Warning:  include(): Failed opening '../koneksi.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 2
+[20-Sep-2025 18:31:11 Asia/Jakarta] PHP Warning:  Undefined variable $conn in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 6
+[20-Sep-2025 18:31:11 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: mysqli_real_escape_string(): Argument #1 ($mysql) must be of type mysqli, null given in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php:6
+Stack trace:
+#0 /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php(6): mysqli_real_escape_string(NULL, 'divira salsabii...')
+#1 /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php(81): include('/home/abss9145/...')
+#2 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 6
+[20-Sep-2025 18:31:16 Asia/Jakarta] PHP Warning:  include(../koneksi.php): Failed to open stream: No such file or directory in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 2
+[20-Sep-2025 18:31:16 Asia/Jakarta] PHP Warning:  include(): Failed opening '../koneksi.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 2
+[20-Sep-2025 18:31:16 Asia/Jakarta] PHP Warning:  Undefined variable $conn in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 6
+[20-Sep-2025 18:31:16 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: mysqli_real_escape_string(): Argument #1 ($mysql) must be of type mysqli, null given in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php:6
+Stack trace:
+#0 /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php(6): mysqli_real_escape_string(NULL, 'divira salsabii...')
+#1 /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php(81): include('/home/abss9145/...')
+#2 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 6
+[20-Sep-2025 18:31:19 Asia/Jakarta] PHP Warning:  include(../koneksi.php): Failed to open stream: No such file or directory in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 2
+[20-Sep-2025 18:31:19 Asia/Jakarta] PHP Warning:  include(): Failed opening '../koneksi.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 2
+[20-Sep-2025 18:31:19 Asia/Jakarta] PHP Warning:  Undefined variable $conn in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 6
+[20-Sep-2025 18:31:19 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: mysqli_real_escape_string(): Argument #1 ($mysql) must be of type mysqli, null given in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php:6
+Stack trace:
+#0 /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php(6): mysqli_real_escape_string(NULL, 'divira salsabii...')
+#1 /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php(81): include('/home/abss9145/...')
+#2 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 6
+[20-Sep-2025 18:34:26 Asia/Jakarta] PHP Warning:  include(../koneksi.php): Failed to open stream: No such file or directory in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 2
+[20-Sep-2025 18:34:26 Asia/Jakarta] PHP Warning:  include(): Failed opening '../koneksi.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 2
+[20-Sep-2025 18:34:26 Asia/Jakarta] PHP Warning:  Undefined array key "prodi" in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 8
+[20-Sep-2025 18:34:26 Asia/Jakarta] PHP Warning:  Undefined variable $conn in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 14
+[20-Sep-2025 18:34:26 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php:14
+Stack trace:
+#0 /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php(14): mysqli_query(NULL, 'INSERT INTO pen...')
+#1 /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php(81): include('/home/abss9145/...')
+#2 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 14
+[20-Sep-2025 18:34:28 Asia/Jakarta] PHP Warning:  include(../koneksi.php): Failed to open stream: No such file or directory in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 2
+[20-Sep-2025 18:34:28 Asia/Jakarta] PHP Warning:  include(): Failed opening '../koneksi.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 2
+[20-Sep-2025 18:34:28 Asia/Jakarta] PHP Warning:  Undefined variable $conn in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 57
+[20-Sep-2025 18:34:28 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php:57
+Stack trace:
+#0 /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php(57): mysqli_query(NULL, 'SELECT * FROM p...')
+#1 /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php(81): include('/home/abss9145/...')
+#2 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 57
+[20-Sep-2025 18:34:31 Asia/Jakarta] PHP Warning:  include(../koneksi.php): Failed to open stream: No such file or directory in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 2
+[20-Sep-2025 18:34:31 Asia/Jakarta] PHP Warning:  include(): Failed opening '../koneksi.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 2
+[20-Sep-2025 18:34:31 Asia/Jakarta] PHP Warning:  Undefined variable $conn in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 57
+[20-Sep-2025 18:34:31 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php:57
+Stack trace:
+#0 /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php(57): mysqli_query(NULL, 'SELECT * FROM p...')
+#1 /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php(81): include('/home/abss9145/...')
+#2 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 57
+[20-Sep-2025 18:34:40 Asia/Jakarta] PHP Warning:  include(../koneksi.php): Failed to open stream: No such file or directory in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 2
+[20-Sep-2025 18:34:40 Asia/Jakarta] PHP Warning:  include(): Failed opening '../koneksi.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 2
+[20-Sep-2025 18:34:40 Asia/Jakarta] PHP Warning:  Undefined variable $conn in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 57
+[20-Sep-2025 18:34:40 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php:57
+Stack trace:
+#0 /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php(57): mysqli_query(NULL, 'SELECT * FROM p...')
+#1 /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php(81): include('/home/abss9145/...')
+#2 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 57
+[20-Sep-2025 18:35:30 Asia/Jakarta] PHP Warning:  include(../koneksi.php): Failed to open stream: No such file or directory in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 2
+[20-Sep-2025 18:35:30 Asia/Jakarta] PHP Warning:  include(): Failed opening '../koneksi.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 2
+[20-Sep-2025 18:35:30 Asia/Jakarta] PHP Warning:  Undefined variable $conn in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 14
+[20-Sep-2025 18:35:30 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php:14
+Stack trace:
+#0 /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php(14): mysqli_query(NULL, 'INSERT INTO pen...')
+#1 /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php(81): include('/home/abss9145/...')
+#2 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 14
+[20-Sep-2025 18:38:56 Asia/Jakarta] PHP Warning:  include(../koneksi.php): Failed to open stream: No such file or directory in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 4
+[20-Sep-2025 18:38:56 Asia/Jakarta] PHP Warning:  include(): Failed opening '../koneksi.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 4
+[20-Sep-2025 18:38:56 Asia/Jakarta] PHP Warning:  Undefined variable $conn in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 16
+[20-Sep-2025 18:38:56 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php:16
+Stack trace:
+#0 /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php(16): mysqli_query(NULL, 'INSERT INTO pen...')
+#1 /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php(81): include('/home/abss9145/...')
+#2 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 16
+[20-Sep-2025 18:41:05 Asia/Jakarta] PHP Parse error:  Unmatched '}' in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 17
+[20-Sep-2025 18:41:06 Asia/Jakarta] PHP Parse error:  Unmatched '}' in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 17
+[20-Sep-2025 18:41:07 Asia/Jakarta] PHP Parse error:  Unmatched '}' in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 17
+[20-Sep-2025 18:41:08 Asia/Jakarta] PHP Parse error:  Unmatched '}' in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 17
+[20-Sep-2025 18:41:08 Asia/Jakarta] PHP Parse error:  Unmatched '}' in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 17
+[20-Sep-2025 18:41:09 Asia/Jakarta] PHP Parse error:  Unmatched '}' in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 26
+[20-Sep-2025 18:41:10 Asia/Jakarta] PHP Parse error:  Unmatched '}' in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 26
+[20-Sep-2025 18:41:12 Asia/Jakarta] PHP Parse error:  Unmatched '}' in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 17
+[20-Sep-2025 18:41:14 Asia/Jakarta] PHP Parse error:  Unmatched '}' in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 17
+[20-Sep-2025 18:41:20 Asia/Jakarta] PHP Parse error:  Unmatched '}' in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 17
+[20-Sep-2025 18:41:52 Asia/Jakarta] PHP Parse error:  Unmatched '}' in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 17
+[20-Sep-2025 18:41:53 Asia/Jakarta] PHP Parse error:  Unmatched '}' in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 17
+[20-Sep-2025 18:41:53 Asia/Jakarta] PHP Parse error:  Unmatched '}' in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 17
+[20-Sep-2025 18:41:53 Asia/Jakarta] PHP Parse error:  Unmatched '}' in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 17
+[20-Sep-2025 18:41:54 Asia/Jakarta] PHP Parse error:  Unmatched '}' in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 17
+[20-Sep-2025 18:41:56 Asia/Jakarta] PHP Parse error:  Unmatched '}' in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 26
+[20-Sep-2025 18:41:57 Asia/Jakarta] PHP Parse error:  Unmatched '}' in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 26
+[20-Sep-2025 18:41:57 Asia/Jakarta] PHP Warning:  include(pages/users.php): Failed to open stream: No such file or directory in /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php on line 87
+[20-Sep-2025 18:41:57 Asia/Jakarta] PHP Warning:  include(): Failed opening 'pages/users.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php on line 87
+[20-Sep-2025 18:42:04 Asia/Jakarta] PHP Parse error:  Unmatched '}' in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 17
+[20-Sep-2025 18:44:03 Asia/Jakarta] PHP Parse error:  Unmatched '}' in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 20
+[20-Sep-2025 18:44:05 Asia/Jakarta] PHP Parse error:  Unmatched '}' in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 20
+[20-Sep-2025 18:44:07 Asia/Jakarta] PHP Parse error:  Unmatched '}' in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 29
+[20-Sep-2025 18:44:08 Asia/Jakarta] PHP Parse error:  Unmatched '}' in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 29
+[20-Sep-2025 18:44:15 Asia/Jakarta] PHP Parse error:  Unmatched '}' in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 20
+[20-Sep-2025 18:54:38 Asia/Jakarta] PHP Parse error:  syntax error, unexpected string content "", expecting "-" or identifier or variable or number in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 96
+[20-Sep-2025 18:54:43 Asia/Jakarta] PHP Parse error:  syntax error, unexpected string content "", expecting "-" or identifier or variable or number in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 96
+[20-Sep-2025 18:55:18 Asia/Jakarta] PHP Parse error:  syntax error, unexpected string content "", expecting "-" or identifier or variable or number in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 96
+[20-Sep-2025 18:55:19 Asia/Jakarta] PHP Parse error:  syntax error, unexpected string content "", expecting "-" or identifier or variable or number in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 96
+[20-Sep-2025 18:55:19 Asia/Jakarta] PHP Parse error:  syntax error, unexpected string content "", expecting "-" or identifier or variable or number in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 96
+[20-Sep-2025 18:55:19 Asia/Jakarta] PHP Parse error:  syntax error, unexpected string content "", expecting "-" or identifier or variable or number in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 96
+[20-Sep-2025 18:55:19 Asia/Jakarta] PHP Parse error:  syntax error, unexpected string content "", expecting "-" or identifier or variable or number in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 96
+[20-Sep-2025 18:55:19 Asia/Jakarta] PHP Parse error:  syntax error, unexpected string content "", expecting "-" or identifier or variable or number in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 96
+[20-Sep-2025 18:56:14 Asia/Jakarta] PHP Parse error:  syntax error, unexpected string content "", expecting "-" or identifier or variable or number in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 98
+[20-Sep-2025 18:56:17 Asia/Jakarta] PHP Parse error:  syntax error, unexpected string content "", expecting "-" or identifier or variable or number in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 98
+[20-Sep-2025 18:56:18 Asia/Jakarta] PHP Parse error:  syntax error, unexpected string content "", expecting "-" or identifier or variable or number in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 98
+[20-Sep-2025 18:56:18 Asia/Jakarta] PHP Parse error:  syntax error, unexpected string content "", expecting "-" or identifier or variable or number in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 98
+[20-Sep-2025 18:56:18 Asia/Jakarta] PHP Parse error:  syntax error, unexpected string content "", expecting "-" or identifier or variable or number in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 98
+[20-Sep-2025 18:56:19 Asia/Jakarta] PHP Parse error:  syntax error, unexpected string content "", expecting "-" or identifier or variable or number in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 98
+[20-Sep-2025 19:27:57 Asia/Jakarta] PHP Warning:  require(/home/abss9145/public_html/psikologi.absensippwalisongo.id/fpdf186/fpdf.php): Failed to open stream: No such file or directory in /home/abss9145/public_html/psikologi.absensippwalisongo.id/generate_surat.php on line 5
+[20-Sep-2025 19:27:57 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required '/home/abss9145/public_html/psikologi.absensippwalisongo.id/fpdf186/fpdf.php' (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/abss9145/public_html/psikologi.absensippwalisongo.id/generate_surat.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/generate_surat.php on line 5
+[20-Sep-2025 19:32:05 Asia/Jakarta] PHP Warning:  require(/home/abss9145/public_html/psikologi.absensippwalisongo.id/fpdf186/fpdf.php): Failed to open stream: No such file or directory in /home/abss9145/public_html/psikologi.absensippwalisongo.id/generate_surat.php on line 5
+[20-Sep-2025 19:32:05 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required '/home/abss9145/public_html/psikologi.absensippwalisongo.id/fpdf186/fpdf.php' (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/abss9145/public_html/psikologi.absensippwalisongo.id/generate_surat.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/generate_surat.php on line 5
+[20-Sep-2025 19:36:55 Asia/Jakarta] PHP Warning:  require(/home/abss9145/public_html/psikologi.absensippwalisongo.id/fpdf186/fpdf.php): Failed to open stream: No such file or directory in /home/abss9145/public_html/psikologi.absensippwalisongo.id/generate_surat.php on line 5
+[20-Sep-2025 19:36:55 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required '/home/abss9145/public_html/psikologi.absensippwalisongo.id/fpdf186/fpdf.php' (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/abss9145/public_html/psikologi.absensippwalisongo.id/generate_surat.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/generate_surat.php on line 5
+[20-Sep-2025 19:39:05 Asia/Jakarta] PHP Warning:  require(/home/abss9145/public_html/psikologi.absensippwalisongo.id/fpdf186/fpdf.php): Failed to open stream: No such file or directory in /home/abss9145/public_html/psikologi.absensippwalisongo.id/generate_surat.php on line 5
+[20-Sep-2025 19:39:05 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required '/home/abss9145/public_html/psikologi.absensippwalisongo.id/fpdf186/fpdf.php' (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/abss9145/public_html/psikologi.absensippwalisongo.id/generate_surat.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/generate_surat.php on line 5
+[20-Sep-2025 19:39:06 Asia/Jakarta] PHP Warning:  require(/home/abss9145/public_html/psikologi.absensippwalisongo.id/fpdf186/fpdf.php): Failed to open stream: No such file or directory in /home/abss9145/public_html/psikologi.absensippwalisongo.id/generate_surat.php on line 5
+[20-Sep-2025 19:39:06 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required '/home/abss9145/public_html/psikologi.absensippwalisongo.id/fpdf186/fpdf.php' (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/abss9145/public_html/psikologi.absensippwalisongo.id/generate_surat.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/generate_surat.php on line 5
+[20-Sep-2025 19:39:08 Asia/Jakarta] PHP Warning:  require(/home/abss9145/public_html/psikologi.absensippwalisongo.id/fpdf186/fpdf.php): Failed to open stream: No such file or directory in /home/abss9145/public_html/psikologi.absensippwalisongo.id/generate_surat.php on line 5
+[20-Sep-2025 19:39:08 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required '/home/abss9145/public_html/psikologi.absensippwalisongo.id/fpdf186/fpdf.php' (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/abss9145/public_html/psikologi.absensippwalisongo.id/generate_surat.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/generate_surat.php on line 5
+[20-Sep-2025 19:39:14 Asia/Jakarta] PHP Warning:  require(/home/abss9145/public_html/psikologi.absensippwalisongo.id/fpdf186/fpdf.php): Failed to open stream: No such file or directory in /home/abss9145/public_html/psikologi.absensippwalisongo.id/generate_surat.php on line 5
+[20-Sep-2025 19:39:14 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required '/home/abss9145/public_html/psikologi.absensippwalisongo.id/fpdf186/fpdf.php' (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/abss9145/public_html/psikologi.absensippwalisongo.id/generate_surat.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/generate_surat.php on line 5
+[20-Sep-2025 20:03:14 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php:8) in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/surat.php on line 35
+[20-Sep-2025 20:07:38 Asia/Jakarta] PHP Warning:  include(pages/users.php): Failed to open stream: No such file or directory in /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php on line 87
+[20-Sep-2025 20:07:38 Asia/Jakarta] PHP Warning:  include(): Failed opening 'pages/users.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php on line 87
+[10-Oct-2025 21:41:05 Asia/Jakarta] PHP Warning:  Undefined variable $data in /home/abss9145/public_html/psikologi.absensippwalisongo.id/chat.php on line 11
+[10-Oct-2025 21:41:05 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/abss9145/public_html/psikologi.absensippwalisongo.id/chat.php:1) in /home/abss9145/public_html/psikologi.absensippwalisongo.id/chat.php on line 16
+[11-Oct-2025 12:10:57 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: Resource temporarily unavailable in /home/abss9145/public_html/psikologi.absensippwalisongo.id/koneksi.php:7
+Stack trace:
+#0 /home/abss9145/public_html/psikologi.absensippwalisongo.id/koneksi.php(7): mysqli->__construct('localhost', 'abss9145_psikol...', Object(SensitiveParameterValue), 'abss9145_psikol...')
+#1 /home/abss9145/public_html/psikologi.absensippwalisongo.id/index.php(3): include('/home/abss9145/...')
+#2 {main}
+  thrown in /home/abss9145/public_html/psikologi.absensippwalisongo.id/koneksi.php on line 7
+[14-Oct-2025 12:23:43 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php:8) in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 38
+[14-Oct-2025 12:23:47 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php:8) in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 38
+[14-Oct-2025 12:23:52 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php:8) in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 38
+[14-Oct-2025 12:24:21 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php:8) in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 38
+[14-Oct-2025 12:24:27 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php:8) in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 38
+[14-Oct-2025 12:24:39 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php:8) in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 38
+[14-Oct-2025 12:24:41 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php:8) in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 38
+[14-Oct-2025 12:24:49 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php:8) in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 38
+[14-Oct-2025 12:30:44 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php:8) in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 38
+[14-Oct-2025 12:30:55 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php:8) in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 38
+[14-Oct-2025 12:31:56 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php:8) in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 38
+[14-Oct-2025 12:36:31 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php:8) in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 38
+[14-Oct-2025 12:37:17 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php:8) in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 38
+[14-Oct-2025 12:38:57 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php:8) in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 38
+[14-Oct-2025 12:47:48 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php:8) in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 38
+[14-Oct-2025 12:48:11 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php:8) in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 38
+[14-Oct-2025 12:48:34 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php:8) in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 38
+[14-Oct-2025 12:48:38 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php:8) in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 38
+[14-Oct-2025 12:53:55 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php:8) in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 38
+[14-Oct-2025 12:53:59 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php:8) in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 38
+[14-Oct-2025 12:54:04 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php:8) in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 38
+[14-Oct-2025 12:56:35 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php:8) in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 38
+[14-Oct-2025 13:02:35 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php:8) in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 38
+[14-Oct-2025 13:02:39 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php:8) in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 38
+[14-Oct-2025 13:02:52 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php:8) in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 38
+[14-Oct-2025 13:06:02 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php:8) in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 41
+[14-Oct-2025 13:11:07 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php:8) in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 41
+[14-Oct-2025 13:11:12 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php:8) in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 41
+[14-Oct-2025 13:14:24 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php:8) in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 42
+[14-Oct-2025 13:14:29 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php:8) in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 42
+[14-Oct-2025 13:14:36 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php:8) in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 42
+[14-Oct-2025 13:14:49 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php:8) in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 42
+[14-Oct-2025 13:15:14 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php:8) in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 42
+[14-Oct-2025 13:18:19 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php:8) in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 41
+[14-Oct-2025 13:18:39 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/abss9145/public_html/psikologi.absensippwalisongo.id/admin.php:8) in /home/abss9145/public_html/psikologi.absensippwalisongo.id/pages/events.php on line 41

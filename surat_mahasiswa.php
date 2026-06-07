@@ -1,5 +1,25 @@
 <?php include 'templates/header.php'; ?>
 <?php include 'templates/sidebar.php'; ?>
+<?php include 'koneksi.php'; ?>
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+?>
+
+<?php
+// Proses submit form
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $nim         = mysqli_real_escape_string($conn, $_POST['nim']);
+    $nama        = mysqli_real_escape_string($conn, $_POST['nama']);
+    $prodi       = mysqli_real_escape_string($conn, $_POST['prodi']);
+    $jenis_surat = mysqli_real_escape_string($conn, $_POST['jenis_surat']);
+    $keterangan  = mysqli_real_escape_string($conn, $_POST['keterangan']);
+
+    $query = "INSERT INTO pengajuan_surat (nim, nama, prodi, jenis_surat, keterangan) 
+              VALUES ('$nim', '$nama', '$prodi', '$jenis_surat', '$keterangan')";
+    mysqli_query($conn, $query);
+}
+?>
 
 <div class="section-banner bg-16">
     <div class="container">
@@ -27,6 +47,7 @@
                             <li><a href="kemahasiswaan.php">Kemahasiswaan</a></li>
                             <li><a href="jadwal_kuliah.php">Jadwal Kuliah</a></li>
                             <li><a class="active" href="surat_mahasiswa.php">Persuratan Mahasiswa</a></li>
+                            <li><a href="dosen.php">Dosen Kami</a></li>
                         </ul>
                     </div>
                     <div class="default-btn mt-3">
@@ -37,39 +58,44 @@
 
             <!-- Konten Persuratan -->
             <div class="col-lg-8">
-                <div class="p-4" style="background:#e9f7ef; border-radius:10px;">
+                <div class="p-4" style="background:#bf2ec9; border-radius:10px;">
                     <h3 class="text-center mb-4">Form Pengajuan Surat</h3>
-                    <form>
+                    <form method="POST" action="">
                         <div class="mb-3">
-                            <label class="form-label">NIM</label>
-                            <input type="text" class="form-control" placeholder="Masukkan NIM">
+                            <label class="form-label fw-bold">NIM</label>
+                            <input type="text" name="nim" class="form-control" 
+                                style="border:2px solid #000; font-weight:bold;" required>
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">Nama</label>
-                            <input type="text" class="form-control" placeholder="Masukkan Nama">
+                            <label class="form-label fw-bold">Nama</label>
+                            <input type="text" name="nama" class="form-control" 
+                                style="border:2px solid #000; font-weight:bold;" required>
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">Program Studi</label>
-                            <input type="text" class="form-control" placeholder="Masukkan Prodi">
+                            <label class="form-label fw-bold">Program Studi</label>
+                            <input type="text" name="prodi" class="form-control" 
+                                style="border:2px solid #000; font-weight:bold;" required>
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">Jenis Surat</label>
-                            <select class="form-select">
-                                <option selected>Pilih Jenis Surat</option>
-                                <option>Surat Aktif Kuliah</option>
-                                <option>Surat Izin Riset</option>
-                                <option>Surat Rekomendasi</option>
+                            <label class="form-label fw-bold">Jenis Surat</label>
+                            <select name="jenis_surat" class="form-select" 
+                                    style="border:2px solid #000; font-weight:bold;" required>
+                                <option value="">Pilih Jenis Surat</option>
+                                <option value="Surat Aktif Kuliah">Surat Aktif Kuliah</option>
+                                <option value="Surat Izin Riset">Surat Izin Riset</option>
+                                <option value="Surat Rekomendasi">Surat Rekomendasi</option>
                             </select>
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">Keterangan</label>
-                            <textarea class="form-control" rows="3" placeholder="Tuliskan keterangan tambahan"></textarea>
+                            <label class="form-label fw-bold">Keterangan</label>
+                            <textarea name="keterangan" class="form-control" rows="3" 
+                                    style="border:2px solid #000; font-weight:bold;"></textarea>
                         </div>
                         <button type="submit" class="default-btn">Ajukan Surat</button>
                     </form>
                 </div>
 
-                <!-- Riwayat Pengajuan Dummy -->
+                <!-- Riwayat Pengajuan
                 <div class="p-4 mt-4" style="background:#fef9e7; border-radius:10px;">
                     <h4 class="mb-3 text-center">Riwayat Pengajuan Surat</h4>
                     <table class="table table-bordered">
@@ -83,30 +109,35 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>2141720001</td>
-                                <td>Budi Santoso</td>
-                                <td>Surat Aktif Kuliah</td>
-                                <td><span class="badge bg-warning">Diproses</span></td>
-                                <td>-</td>
-                            </tr>
-                            <tr>
-                                <td>2141720002</td>
-                                <td>Siti Aminah</td>
-                                <td>Surat Izin Riset</td>
-                                <td><span class="badge bg-success">Selesai</span></td>
-                                <td><a href="#">Download</a></td>
-                            </tr>
-                            <tr>
-                                <td>2141720003</td>
-                                <td>Agus Wijaya</td>
-                                <td>Surat Rekomendasi</td>
-                                <td><span class="badge bg-danger">Ditolak</span></td>
-                                <td>-</td>
-                            </tr>
+                            <?php
+                            $result = mysqli_query($conn, "SELECT * FROM pengajuan_surat ORDER BY created_at DESC");
+                            while ($row = mysqli_fetch_assoc($result)) {
+                                echo "<tr>";
+                                echo "<td>".$row['nim']."</td>";
+                                echo "<td>".$row['nama']."</td>";
+                                echo "<td>".$row['jenis_surat']."</td>";
+                                echo "<td>";
+                                if ($row['status'] == 'Diproses') {
+                                    echo '<span class="badge bg-warning">Diproses</span>';
+                                } elseif ($row['status'] == 'Selesai') {
+                                    echo '<span class="badge bg-success">Selesai</span>';
+                                } else {
+                                    echo '<span class="badge bg-danger">Ditolak</span>';
+                                }
+                                echo "</td>";
+                                echo "<td>";
+                                if ($row['file_surat']) {
+                                    echo '<a href="uploads/'.$row['file_surat'].'" target="_blank">Download</a>';
+                                } else {
+                                    echo "-";
+                                }
+                                echo "</td>";
+                                echo "</tr>";
+                            }
+                            ?>
                         </tbody>
                     </table>
-                </div>
+                </div> -->
             </div>
 
         </div>

@@ -1,9 +1,55 @@
 
+<style>
+    .navbar-area .navbar-brand img {
+        max-width: 180px;  /* ukuran default */
+        width: 100%;
+        height: auto;
+    }
+    
+    /* Saat sticky, biar lebih kecil */
+    .navbar-area.sticky .navbar-brand img {
+        max-width: 150px;
+    }
+    
+    /* Navbar wrapper pakai flex rapi */
+    .navbar-area .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    /* Menu tengah fleksibel */
+    .navbar-area .navbar-nav {
+        flex: 1;
+        display: flex;
+        justify-content: center; /* biar rata tengah */
+        gap: 20px;
+    }
+    
+    /* Tombol CTA "Hubungi Kami" */
+    .navbar-area .default-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+        border-radius: 25px;
+        white-space: nowrap; /* biar teks tidak pecah */
+    }
+    
+    /* Responsif saat layar kecil */
+    @media (max-width: 991px) {
+        .navbar-area .navbar-brand img {
+            max-width: 140px;
+        }
+        .navbar-area .navbar-nav {
+            display: none; /* diganti dengan offcanvas/menu mobile */
+        }
+    }
+    
+    </style>
 <header class="main-header">
     <div class="navbar-area style-2" id="navbar">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="index.php">
                     <img class="logo-light" src="../Template_file/canyon/assets/img/logo/LOGO-PSI.png" alt="logo">
                     <img class="logo-dark" src="../Template_file/canyon/assets/img/logo/LOGO-PSI.png" alt="logo">
                 </a>
@@ -33,6 +79,7 @@
                                 <li class="nav-item"><a href="kemahasiswaan.php" class="nav-link">Kemahasiswaan</a></li>
                                 <li class="nav-item"><a href="jadwal_kuliah.php" class="nav-link">Jadwal Kuliah</a></li>
                                 <li class="nav-item"><a href="surat_mahasiswa.php" class="nav-link">Surat Mahasiswa </a></li>
+                                <li class="nav-item"><a href="dosen.php" class="nav-link">Dosen Kami </a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -47,8 +94,8 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li class="nav-item"><a href="lpt.php" class="nav-link">LPT</a></li>
-                                <li class="nav-item"><a href="how-to-apply.html" class="nav-link">PAUD "Ananda"</a></li>
-                                <li class="nav-item"><a href="tuition-fees.html" class="nav-link">JPT</a></li>
+                                <li class="nav-item"><a href="paud.php" class="nav-link">PAUD "Ananda"</a></li>
+                                <li class="nav-item"><a href="https://jurnal.unmer.ac.id/index.php/jpt" class="nav-link">JPT</a></li>
                                 <li class="nav-item"><a href="financial-aid.html" class="nav-link">Pusat Studi</a></li>
                             </ul>
                         </li>
@@ -65,8 +112,10 @@
                     <div class="others-option d-flex align-items-center">
                         <div class="option-item">
                             <div class="nav-btn">
-                                <a href="contact-us.html" class="default-btn">Hubungi Kami</a>
-                            </div>
+                            <a href="tel:0341568395" class="default-btn">
+                            Hubungi Kami
+                            </a>
+                            </div>                            
                         </div>
                         <div class="option-item">
                             <div class="nav-search">
@@ -82,12 +131,17 @@
 
        <!-- Start Responsive Navbar Area -->
        <div class="responsive-navbar offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="navbarOffcanvas">
-           <div class="offcanvas-header">
-               <a href="index.html" class="logo d-inline-block">
-                   <img class="logo-light" src="../Template_file/canyon/assets/img/logo/LOGO-PSI.png" alt="logo">
-               </a>
-               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-           </div>
+        <div class="offcanvas-header">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-8">
+                        <a href="index.php" class="logo d-inline-block">
+                            <img class="logo-light img-fluid" src="../Template_file/canyon/assets/img/logo/LOGO-PSI.png" alt="logo" style="max-height: 40px;">
+                        </a>
+                    </div>
+                    <div class="col-4 text-end">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
            <div class="offcanvas-body">
                <div class="accordion" id="navbarAccordion">
                    <!-- Beranda -->
@@ -117,6 +171,9 @@
                                    <div class="accordion-item">
                                        <a href="surat_mahasiswa.php" class="accordion-link">Surat Mahasiswa</a>
                                    </div>
+                                   <div class="accordion-item">
+                                    <a href="dosen.php" class="accordion-link">Dosen Kami</a>
+                                   </div>
                                </div>
                            </div>
                        </div>
@@ -141,10 +198,10 @@
                                        <a href="lpt.php" class="accordion-link">LPT</a>
                                    </div>
                                    <div class="accordion-item">
-                                       <a href="how-to-apply.html" class="accordion-link">PAUD "Ananda"</a>
+                                       <a href="paud.php" class="accordion-link">PAUD "Ananda"</a>
                                    </div>
                                    <div class="accordion-item">
-                                       <a href="tuition-fees.html" class="accordion-link">JPT</a>
+                                       <a href="https://jurnal.unmer.ac.id/index.php/jpt" class="accordion-link">JPT</a>
                                    </div>
                                    <div class="accordion-item">
                                        <a href="financial-aid.html" class="accordion-link">Pusat Studi</a>
@@ -156,24 +213,26 @@
        
                    <!-- Berita & Agenda -->
                    <div class="accordion-item">
-                       <a class="accordion-link without-icon" href="berita-agenda.html">
+                       <a class="accordion-link without-icon" href="berita_agenda.php">
                            Berita & Agenda
                        </a>
                    </div>
        
                    <!-- Tentang Unmer -->
                    <div class="accordion-item">
-                       <a class="accordion-link without-icon" href="tentang-unmer.html">
+                       <a class="accordion-link without-icon" href="https://unmer.ac.id/">
                            Tentang Unmer
                        </a>
                    </div>
        
                    <!-- Hubungi Kami -->
-                   <div class="accordion-item">
-                       <a class="accordion-link without-icon" href="contact-us.html">
-                           Hubungi Kami
-                       </a>
-                   </div>
+                   <div class="offcanvas-other-options">
+                    <div class="option-item">
+                    <a href="tel:0341568395" class="default-btn">
+                    Hubungi Kami
+                    </a>
+                    </div>
+                </div> 
                </div>
        
                <!-- Contact Info -->
@@ -182,7 +241,7 @@
                    <ul class="contact-info list-style">
                        <li>
                            <i class="bx bxs-envelope"></i>
-                           <a href="mailto:contact@Clgunme.edu">contact@Clgunme.edu</a>
+                           <a href="mailto:psikologi@unmer.ac.id">psikologi@unmer.ac.id</a>
                        </li>
                        <li>
                            <i class="bx bxs-time"></i>
@@ -190,18 +249,20 @@
                        </li>
                    </ul>
                    <ul class="social-profile list-style">
-                       <li><a href="https://www.fb.com" target="_blank"><i class='bx bxl-facebook'></i></a></li>
-                       <li><a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram'></i></a></li>
-                       <li><a href="https://www.linkedin.com" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
+                       <li><a href="https://www.facebook.com/p/psiunmermlg-100081348555586/" target="_blank"><i class='bx bxl-facebook'></i></a></li>
+                       <li><a href="https://www.instagram.com/psikologi.unmer/?hl=en#:~:text=Psikologi%20Unmer%20Malang%20(%40psikologi.,%E2%80%A2%20Instagram%20photos%20and%20videos" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+                       <li><a href="https://www.youtube.com/@psikologi.unmermlg/" target="_blank"><i class='bx bxl-youtube'></i></a></li>
                    </ul>
                </div>
        
                <!-- CTA Button -->
                <div class="offcanvas-other-options">
-                   <div class="option-item">
-                       <a href="contact-us.html" class="default-btn">Hubungi Kami</a>
-                   </div>
-               </div>
+                <div class="option-item">
+                <a href="tel:0341568395" class="default-btn">
+                Hubungi Kami
+                </a>
+                </div>
+            </div>            
            </div>
        </div>
        <!-- End Responsive Navbar Area -->
@@ -210,8 +271,8 @@
         <!-- Start Clgun Searchbar Area -->
         <div class="clgun offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop">
             <div class="offcanvas-header">
-                <a href="index.html" class="logo">
-                    <img src="assets/img/logo/logo.png" alt="image">
+                <a href="index.php" class="logo">
+                    <img src="Template_file/canyon/assets/img/logo/LOGO-PSI.png" alt="image">
                 </a>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
@@ -234,24 +295,21 @@
                     <ul class="contact-info list-style">
                         <li>
                             <i class="bx bxs-time"></i>
-                            <p>Mon - Fri: 9:00 - 18:00</p>
                         </li>
-                        <li><i class="bx bxs-phone-call"></i> General Inquiries - <a href="tel:+8495160885">(849) 516-0885</a></li>
+                        <li><i class="bx bxs-phone-call"></i> Telpon Kami - <a href="tel:+62341568395">(0341) 568395</a></li>
                         <li>
                             <i class="bx bxs-envelope"></i>
-                            <a href="contact@Clgunme.edu">contact@Clgunme.edu</a>
+                            <a href="mailto:psikologi@unmer.ac.id">psikologi@unmer.ac.id</a>
                         </li>
                         <li>
                             <i class="bx bxs-map"></i>
-                            <p>404 Camino Del Rio S, Suite 102San Diego, CA 92108</p>
+                            <p>Jl. Terusan Dieng No.62-64, Pisang Candi, Kec. Sukun, Kota Malang, Jawa Timur 65146</p>
                         </li>
                     </ul>
                     <ul class="social-profile list-style">
-                        <li><a href="https://www.fb.com" target="_blank"><i class='bx bxl-facebook'></i></a></li>
-                        <li><a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram'></i></a></li>
-                        <li><a href="https://www.twitter.com" target="_blank"><i class='bx bxl-twitter'></i></a></li>
-                        <li><a href="https://www.dribbble.com" target="_blank"><i class='bx bxl-dribbble'></i></a></li>
-                        <li><a href="https://www.linkedin.com" target="_blank"><i class='bx bxl-linkedin' ></i></a></li>
+                        <li><a href="https://www.facebook.com/p/psiunmermlg-100081348555586/" target="_blank"><i class='bx bxl-facebook'></i></a></li>
+                       <li><a href="https://www.instagram.com/psikologi.unmer/?hl=en#:~:text=Psikologi%20Unmer%20Malang%20(%40psikologi.,%E2%80%A2%20Instagram%20photos%20and%20videos" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+                       <li><a href="https://www.youtube.com/@psikologi.unmermlg/" target="_blank"><i class='bx bxl-youtube'></i></a></li>
                     </ul>
                 </div>
 

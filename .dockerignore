@@ -1,0 +1,12 @@
+.DS_Store
+.git
+.gitignore
+Dockerfile
+*.sql
+debug_log.txt
+error_log
+*.log
+.ftpquota
+__MACOSX
+Archive
+documentation

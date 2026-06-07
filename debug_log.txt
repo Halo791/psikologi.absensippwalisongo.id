@@ -1,0 +1,312 @@
+=== NEW REQUEST ===
+
+
+=== NEW REQUEST ===
+
+
+=== NEW REQUEST ===
+
+
+=== NEW REQUEST ===
+
+
+=== NEW REQUEST ===
+
+
+=== NEW REQUEST ===
+
+
+=== NEW REQUEST ===
+
+
+=== NEW REQUEST ===
+
+
+=== NEW REQUEST ===
+
+
+=== NEW REQUEST ===
+
+
+=== NEW REQUEST ===
+
+
+=== NEW REQUEST ===
+
+
+=== NEW REQUEST ===
+
+
+=== NEW REQUEST ===
+{"message":"halo"}
+Array
+(
+    [message] => halo
+)
+
+User message: halo
+Response dari OpenRouter:
+{"error":{"message":"User not found.","code":401}}
+=== NEW REQUEST ===
+{"message":"bro"}
+Array
+(
+    [message] => bro
+)
+
+User message: bro
+Response dari OpenRouter:
+{"error":{"message":"User not found.","code":401}}
+=== NEW REQUEST ===
+{"message":"halo"}
+Array
+(
+    [message] => halo
+)
+
+User message: halo
+Response dari OpenRouter:
+{"error":{"message":"User not found.","code":401}}
+=== NEW REQUEST ===
+
+
+=== NEW REQUEST ===
+{"message":"halo"}
+Array
+(
+    [message] => halo
+)
+
+User message: halo
+Response dari OpenRouter:
+{"error":{"message":"User not found.","code":401}}
+=== NEW REQUEST ===
+{"message":"halo"}
+Array
+(
+    [message] => halo
+)
+
+User message: halo
+Response dari OpenRouter:
+{"error":{"message":"User not found.","code":401}}
+=== NEW REQUEST ===
+{"message":"halo"}
+Array
+(
+    [message] => halo
+)
+
+User message: halo
+Response dari OpenRouter:
+{"error":{"message":"User not found.","code":401}}
+=== NEW REQUEST ===
+{"message":"halo"}
+Array
+(
+    [message] => halo
+)
+
+User message: halo
+Response dari OpenRouter:
+{"error":{"message":"User not found.","code":401}}
+=== NEW REQUEST ===
+{"message":"halo"}
+Array
+(
+    [message] => halo
+)
+
+User message: halo
+Response dari OpenRouter:
+{"error":{"message":"User not found.","code":401}}
+=== NEW REQUEST ===
+{"message":"halo"}
+Array
+(
+    [message] => halo
+)
+
+User message: halo
+Response dari OpenRouter:
+{"error":{"message":"User not found.","code":401}}
+=== NEW REQUEST ===
+{"message":"halo"}
+Array
+(
+    [message] => halo
+)
+
+User message: halo
+Response dari OpenRouter:
+{"error":{"message":"User not found.","code":401}}
+=== NEW REQUEST ===
+{"message":"halo"}
+Array
+(
+    [message] => halo
+)
+
+User message: halo
+Response dari OpenRouter:
+{"error":{"message":"User not found.","code":401}}
+=== NEW REQUEST ===
+{"message":"halo"}
+Array
+(
+    [message] => halo
+)
+
+User message: halo
+Response dari OpenRouter:
+{"error":{"message":"User not found.","code":401}}
+=== NEW REQUEST ===
+{"message":"halo"}
+Array
+(
+    [message] => halo
+)
+
+User message: halo
+Response dari OpenRouter:
+{"error":{"message":"User not found.","code":401}}
+=== NEW REQUEST ===
+{"message":"bro"}
+Array
+(
+    [message] => bro
+)
+
+User message: bro
+Response dari OpenRouter:
+{"error":{"message":"User not found.","code":401}}
+=== NEW REQUEST ===
+{"message":"halo"}
+Array
+(
+    [message] => halo
+)
+
+User message: halo
+Response dari OpenRouter:
+{"error":{"message":"User not found.","code":401}}
+=== NEW REQUEST ===
+{"message":"halo"}
+Array
+(
+    [message] => halo
+)
+
+User message: halo
+Response dari OpenRouter:
+{"error":{"message":"User not found.","code":401}}
+=== NEW REQUEST ===
+{"message":"halo"}
+Array
+(
+    [message] => halo
+)
+
+User message: halo
+Response dari OpenRouter:
+{"error":{"message":"User not found.","code":401}}
+=== NEW REQUEST ===
+{"message":"halo"}
+Array
+(
+    [message] => halo
+)
+
+User message: halo
+Response dari OpenRouter:
+{"error":{"message":"User not found.","code":401}}
+=== NEW REQUEST ===
+{"message":"halo"}
+Array
+(
+    [message] => halo
+)
+
+User message: halo
+Response dari OpenRouter:
+{"error":{"message":"User not found.","code":401}}
+=== NEW REQUEST ===
+{"message":"halo"}
+Array
+(
+    [message] => halo
+)
+
+User message: halo
+Response dari OpenRouter:
+{"error":{"message":"User not found.","code":401}}
+=== NEW REQUEST ===
+{"message":"halo"}
+Array
+(
+    [message] => halo
+)
+
+User message: halo
+Response dari OpenRouter:
+{"error":{"message":"User not found.","code":401}}
+=== NEW REQUEST ===
+{"message":"halo"}
+Array
+(
+    [message] => halo
+)
+
+User message: halo
+Response dari OpenRouter:
+{"error":{"message":"User not found.","code":401}}
+=== NEW REQUEST ===
+{"message":"halo"}
+Array
+(
+    [message] => halo
+)
+
+User message: halo
+Response dari OpenRouter:
+{"error":{"message":"User not found.","code":401}}
+=== NEW REQUEST ===
+{"message":"halo"}
+Array
+(
+    [message] => halo
+)
+
+User message: halo
+Response dari OpenRouter:
+{"error":{"message":"User not found.","code":401}}
+=== NEW REQUEST ===
+{"message":"halo"}
+Array
+(
+    [message] => halo
+)
+
+User message: halo
+Response dari OpenRouter:
+{"error":{"message":"User not found.","code":401}}
+=== NEW REQUEST ===
+{"message":"halo"}
+Array
+(
+    [message] => halo
+)
+
+User message: halo
+Response dari OpenRouter:
+{"error":{"message":"User not found.","code":401}}
+=== NEW REQUEST ===
+{"message":"halo"}
+Array
+(
+    [message] => halo
+)
+
+User message: halo
+Response dari OpenRouter:
+{"error":{"message":"User not found.","code":401}}
