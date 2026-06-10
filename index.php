@@ -351,26 +351,26 @@
         <div class="p-4 bg-gradient bg-opacity-25 rounded-3" style="background: rgba(255,255,255,0.05);">
           <h4 class="fw-bold text-warning mb-3"><i class="bi bi-lightbulb me-2"></i> Visi</h4>
           <p class="fst-italic mb-4">
-            Menjadi Fakultas Psikologi terkemuka dalam pengembangan Sumber Daya Manusia seutuhnya yang berjiwa wirausaha pada skala nasional dan internasional.
+            Menjadi Fakultas Psikologi terkemuka dalam pengembangan sumber daya manusia seutuhnya yang berjiwa wirausaha pada skala nasional dan internasional.
           </p>
 
           <h4 class="fw-bold text-warning mb-3"><i class="bi bi-flag me-2"></i> Misi</h4>
           <ul class="list-unstyled">
             <li class="mb-3 d-flex align-items-start">
               <i class="bi bi-check-circle-fill text-success me-3"></i>
-              <span>Menyelenggarakan program pendidikan tinggi yang berkualitas pada jenis program pendidikan akademik.</span>
+              <span>1) Menyelenggarakan program pendidikan tinggi di bidang psikologi yang berkualitas pada jenis program pendidikan akademik, untuk menghasilkan lulusan yang kompeten pada bidangnya, berjiwa wirausaha dan berdaya saing nasional dan internasional;</span>
             </li>
             <li class="mb-3 d-flex align-items-start">
               <i class="bi bi-check-circle-fill text-success me-3"></i>
-              <span>Menyelenggarakan penelitian dan pengabdian kepada masyarakat serta publikasi ilmiah dalam bidang Psikologi.</span>
+              <span>2) Menyelenggarakan kegiatan penelitian dan pengabdian kepada masyarakat serta publikasi ilmiah dalam bidang psikologi untuk mendorong peningkatan image dan reputasi program studi serta terciptanya suasana akademik yang kondusif bagi terselenggaranya Fakultas Psikologi sebagai institusi pendidikan yang memiliki reputasi nasional dan internasional;</span>
             </li>
             <li class="mb-3 d-flex align-items-start">
               <i class="bi bi-check-circle-fill text-success me-3"></i>
-              <span>Melaksanakan tata kelola Fakultas berbasis Sistem Informasi Manajemen sebagai DSS dengan prinsip “Good University Governance”.</span>
+              <span>3) Melaksanakan tata kelola fakultas yang berbasis Sistem Informasi Manajemen sebagai Decision Support System (DSS) untuk mewujudkan Sentralisasi Administrasi dan Desentralisasi Akademik (SADA) yang menganut prinsip-prinsip tata kelola fakultas yang baik;</span>
             </li>
             <li class="d-flex align-items-start">
               <i class="bi bi-check-circle-fill text-success me-3"></i>
-              <span>Menjalin kemitraan strategis dengan institusi lain secara nasional maupun internasional.</span>
+              <span>4) Menjalin kerja sama kemitraan dengan institusi lain di dalam maupun di luar negeri dengan prinsip kesetaraan, dalam rangka mewujudkan institusi pendidikan yang memiliki reputasi nasional dan internasional.</span>
             </li>
           </ul>
         </div>
